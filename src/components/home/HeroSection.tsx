@@ -12,7 +12,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[70vh]">
           {/* Text Content */}
           <div className="animate-slide-up">
             <span className="badge badge-yellow mb-6 inline-flex">
@@ -22,7 +22,7 @@ const HeroSection = () => {
               Bridge the Immunity Gap:{" "}
               <span className="text-accent">Immediate Flu Protection</span> with RinseGard.
             </h1>
-            <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 leading-relaxed max-w-xl">
+            <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 leading-relaxed">
               While vaccination is key, the 7–10 day latency period leaves patients vulnerable. 
               RinseGard provides an essential antiseptic shield powered by{" "}
               <strong className="text-accent">Biofilm Dissolving Technology</strong>.
@@ -38,13 +38,13 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Product Image */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative animate-float">
+          {/* Product Image - Equal size split */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative animate-float w-full max-w-lg">
               <img
                 src={heroProduct}
                 alt="RinseGard Antiseptic Oral Rinse"
-                className="max-w-md w-full rounded-2xl shadow-2xl"
+                className="w-full h-auto rounded-2xl shadow-2xl"
               />
               {/* Floating Badge */}
               <div className="absolute -top-4 -left-4 bg-accent text-primary px-4 py-2 rounded-full font-bold text-sm shadow-lg">
