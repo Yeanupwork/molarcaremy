@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Globe, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-navy py-16">
+  return <footer className="bg-navy py-16">
       <div className="container-custom mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
@@ -13,9 +11,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-accent">Care</span>
               <span className="text-accent text-2xl">✦</span>
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Pioneering oral healthcare solutions with patented biofilm-dissolving technology.
-            </p>
+            
           </div>
 
           {/* Quick Links */}
@@ -24,16 +20,11 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {["Home", "Products", "About MolarCare", "FAQ"].map((link) => (
-                <li key={link}>
-                  <Link
-                    to="/"
-                    className="text-primary-foreground/70 text-sm hover:text-accent transition-colors"
-                  >
+              {["Home", "Products", "About MolarCare", "FAQ"].map(link => <li key={link}>
+                  <Link to="/" className="text-primary-foreground/70 text-sm hover:text-accent transition-colors">
                     {link}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -44,10 +35,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/products/rinsegard"
-                  className="text-primary-foreground/70 text-sm hover:text-accent transition-colors"
-                >
+                <Link to="/products/rinsegard" className="text-primary-foreground/70 text-sm hover:text-accent transition-colors">
                   RinseGard Oral Rinse
                 </Link>
               </li>
@@ -93,8 +81,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
