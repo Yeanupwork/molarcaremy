@@ -3,47 +3,36 @@ import Footer from "@/components/layout/Footer";
 import bfdMechanism from "@/assets/bfd-mechanism.png";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Droplets, FlaskConical, TrendingUp } from "lucide-react";
-
-const RevealSection = ({ 
-  children, 
+const RevealSection = ({
+  children,
   className = "",
-  delay = 0 
-}: { 
-  children: React.ReactNode; 
+  delay = 0
+}: {
+  children: React.ReactNode;
   className?: string;
   delay?: number;
 }) => {
-  const { ref, isVisible } = useScrollReveal(0.15);
-  
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-700 ease-out ${className}`}
-      style={{
-        transitionDelay: `${delay}ms`,
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "translateY(0)" : "translateY(40px)",
-      }}
-    >
+  const {
+    ref,
+    isVisible
+  } = useScrollReveal(0.15);
+  return <div ref={ref} className={`transition-all duration-700 ease-out ${className}`} style={{
+    transitionDelay: `${delay}ms`,
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0)" : "translateY(40px)"
+  }}>
       {children}
-    </div>
-  );
+    </div>;
 };
-
 const About = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-b from-[#e8eaed] to-white">
           <div className="container-custom mx-auto text-center">
             <RevealSection>
-              <img
-                alt="BFD Factor - Biofilms Dissolving Factor (Patented)"
-                src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png"
-                className="max-w-sm w-full h-auto object-contain mx-auto mb-6"
-              />
+              <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" className="max-w-sm w-full h-auto object-contain mx-auto mb-6" />
             </RevealSection>
             <RevealSection delay={200}>
               <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6 leading-tight">
@@ -172,7 +161,7 @@ const About = () => {
                   <div className="mt-6 h-2 bg-white/20 rounded-full overflow-hidden">
                     <div className="h-full w-1/4 bg-red-400 rounded-full" />
                   </div>
-                  <p className="text-sm text-white/50 mt-2">~25% biofilm access</p>
+                  
                 </div>
               </RevealSection>
               <RevealSection delay={400}>
@@ -185,7 +174,7 @@ const About = () => {
                   <div className="mt-6 h-2 bg-white/20 rounded-full overflow-hidden">
                     <div className="h-full w-full bg-[#d4a017] rounded-full" />
                   </div>
-                  <p className="text-sm text-white/70 mt-2">100% biofilm penetration</p>
+                  
                 </div>
               </RevealSection>
             </div>
@@ -201,18 +190,12 @@ const About = () => {
               </h2>
             </RevealSection>
             <RevealSection delay={200}>
-              <img
-                src={bfdMechanism}
-                alt="The Mechanism: How Patented BFD Factor Unlocks the Biofilm"
-                className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-lg"
-              />
+              <img src={bfdMechanism} alt="The Mechanism: How Patented BFD Factor Unlocks the Biofilm" className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-lg" />
             </RevealSection>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
