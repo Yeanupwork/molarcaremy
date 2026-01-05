@@ -26,8 +26,8 @@ const About = () => {
       <main>
         {/* Patent Section */}
         <section className="section-padding bg-[#e8eaed]">
-          <div className="container-custom mx-auto flex justify-center">
-            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-w-2xl w-full h-auto" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" />
+          <div className="container-custom mx-auto flex justify-center bg-primary-foreground bg-[primary-navy-light]">
+            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" className="max-w-2xl w-full h-auto border-[primary-navy-light] object-scale-down" />
           </div>
         </section>
 
