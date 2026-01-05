@@ -199,7 +199,7 @@ const Products = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
               <div className="text-center md:text-left">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
-                  It's HALAL!
+                  Halal Certified
                 </h2>
               </div>
               <div className="flex items-center gap-6">
