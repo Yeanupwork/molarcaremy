@@ -31,7 +31,7 @@ const HeroSection = () => {
                 Where to Find
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
+              <Button variant="outline" className="border-2 border-white bg-transparent text-white font-semibold hover:bg-white hover:text-navy">
                 Learn More
               </Button>
             </div>
