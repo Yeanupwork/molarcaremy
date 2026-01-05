@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import bfdMechanism from "@/assets/bfd-mechanism.png";
 
 const About = () => {
   return (
@@ -39,13 +40,13 @@ const About = () => {
           </div>
         </section>
 
-        {/* Image Placeholder Section */}
+        {/* BFD Mechanism Image Section */}
         <section className="w-full">
-          <div className="bg-[#4a4a4a] w-full h-[400px] md:h-[500px] flex items-center justify-center">
-            <span className="text-white text-4xl md:text-5xl font-bold tracking-wider">
-              IMAGE
-            </span>
-          </div>
+          <img 
+            src={bfdMechanism} 
+            alt="The Mechanism: How Patented BFD Factor Unlocks the Biofilm" 
+            className="w-full h-auto object-contain"
+          />
         </section>
 
         {/* Bottom Text Section */}
