@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           {/* Product Image with Shield Overlay */}
           <div className="relative flex items-center justify-center">
-            <div className="relative animate-float w-full max-w-lg">
+            <div className="relative w-full max-w-lg">
               {/* Shield overlay behind product */}
               <img 
                 src={shieldOverlay} 
