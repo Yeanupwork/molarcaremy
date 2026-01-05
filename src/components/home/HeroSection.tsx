@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroProduct from "@/assets/hero-product.png";
+import shieldOverlay from "@/assets/shield-overlay.png";
 import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return <section className="bg-navy min-h-[85vh] flex items-center relative overflow-hidden">
@@ -36,13 +37,20 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Product Image - Equal size split */}
+          {/* Product Image with Shield Overlay */}
           <div className="relative flex items-center justify-center">
             <div className="relative animate-float w-full max-w-lg">
-              <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="w-full h-auto rounded-2xl shadow-2xl" />
-              {/* Floating Badge */}
-              
-              
+              {/* Shield overlay behind product */}
+              <img 
+                src={shieldOverlay} 
+                alt="Protection shield" 
+                className="absolute inset-0 w-full h-full object-contain scale-125 opacity-60 z-0" 
+              />
+              <img 
+                src={heroProduct} 
+                alt="RinseGard Antiseptic Oral Rinse" 
+                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl" 
+              />
             </div>
           </div>
         </div>
