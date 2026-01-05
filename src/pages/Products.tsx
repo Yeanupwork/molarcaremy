@@ -203,10 +203,10 @@ const Products = () => {
                 </h2>
               </div>
               <div className="flex items-center gap-6">
-                <img src={halalLogo} alt="HALAL Certification" className="w-24 h-24 object-contain" />
+                
                 <div className="text-primary-foreground/80 text-sm">
-                  <p className="font-semibold">MS 2634</p>
-                  <p>3 135-10/2024</p>
+                  
+                  
                 </div>
               </div>
             </div>
