@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import molarcareLogo from "@/assets/molarcare-logo.jpg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,12 +35,12 @@ const Header = () => {
       <nav className="container-custom mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-primary">Molar</span>
-              <span className="text-2xl font-bold text-accent">Care</span>
-              <span className="text-accent text-2xl">✦</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={molarcareLogo} 
+              alt="MolarCare" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
