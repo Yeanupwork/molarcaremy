@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import heroProduct from "@/assets/hero-product.png";
 import { ArrowRight } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="bg-navy min-h-[85vh] flex items-center relative overflow-hidden">
+  return <section className="bg-navy min-h-[85vh] flex items-center relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-accent blur-3xl" />
@@ -41,24 +39,14 @@ const HeroSection = () => {
           {/* Product Image - Equal size split */}
           <div className="relative flex items-center justify-center">
             <div className="relative animate-float w-full max-w-lg">
-              <img
-                src={heroProduct}
-                alt="RinseGard Antiseptic Oral Rinse"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="w-full h-auto rounded-2xl shadow-2xl" />
               {/* Floating Badge */}
-              <div className="absolute -top-4 -left-4 bg-accent text-primary px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                Alcohol Free
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary-foreground text-primary px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                120ML
-              </div>
+              
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
