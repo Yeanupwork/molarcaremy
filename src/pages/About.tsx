@@ -32,7 +32,7 @@ const About = () => {
               <div className="flex items-stretch gap-8">
                 <div className="w-1 bg-[#d4a017] flex-shrink-0"></div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  Our patented combination of excipients creates the Biofilm Dissolving Factor (BFD Factor™), a unique delivery system that actively overcomes biofilm resistance.
                 </p>
               </div>
             </div>
