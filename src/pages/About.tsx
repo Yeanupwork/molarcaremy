@@ -101,7 +101,7 @@ const About = () => {
         {/* Patent Section */}
         <section className="section-padding bg-[#e8eaed]">
           <div className="container-custom mx-auto flex justify-center">
-            <img src={bfdFactorLogo} alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-w-2xl w-full h-auto" />
+            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-w-2xl w-full h-auto" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" />
           </div>
         </section>
       </main>
