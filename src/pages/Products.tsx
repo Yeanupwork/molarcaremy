@@ -2,8 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import heroProduct from "@/assets/hero-product.png";
 import symptomsCollage from "@/assets/symptoms-collage.jpg";
-import biofilmMechanism from "@/assets/biofilm-mechanism.jpg";
-import microscopeStudy from "@/assets/microscope-study.jpg";
+import productExplain from "@/assets/product-explain.jpg";
 import halalLogo from "@/assets/halal-logo.png";
 import { Check, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -158,73 +157,13 @@ const Products = () => {
         </section>
 
         {/* Biofilm Mechanism Section */}
-        <section className="py-12 bg-secondary">
+        <section className="py-8 bg-secondary">
           <div className="container-custom mx-auto px-4 md:px-8">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Left: Biofilm Diagram */}
-              <div className="relative">
-                <img
-                  src={biofilmMechanism}
-                  alt="Biofilm mechanism in oral cavity"
-                  className="w-full rounded-xl shadow-lg"
-                />
-                {/* Overlay Labels */}
-                <div className="absolute top-4 left-4 bg-navy/90 text-primary-foreground px-3 py-2 rounded-lg text-sm">
-                  <p className="font-bold">Biofilm Dispersal</p>
-                  <p className="text-xs text-primary-foreground/70">Biofilms that give rise to<br />Cough/Sputum</p>
-                </div>
-                <div className="absolute bottom-4 left-4 bg-white/90 text-primary px-3 py-2 rounded-lg text-sm shadow-lg">
-                  <p className="font-bold text-orange-600">Root Cause of Tonsillitis</p>
-                  <p className="text-xs">- Tonsillar Biofilm</p>
-                </div>
-                <div className="absolute bottom-4 right-4 bg-navy/90 text-primary-foreground px-3 py-2 rounded-lg text-sm">
-                  <p className="font-bold">CPC Stays Longer</p>
-                  <p className="text-xs text-primary-foreground/70">In Tonsil Crypts</p>
-                </div>
-              </div>
-
-              {/* Right: Study Results */}
-              <div>
-                {/* Right Ratio Box */}
-                <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
-                  <div className="flex items-start gap-4">
-                    <div className="text-accent-green">
-                      <Check className="w-8 h-8" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-primary text-lg mb-2">Right Ratio</p>
-                      <ul className="space-y-1 text-muted-foreground">
-                        <li className="flex items-center gap-2">
-                          <Check className="w-4 h-4 text-accent-green" />
-                          Polysorbate 20
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Check className="w-4 h-4 text-accent-green" />
-                          Poloxamer 407
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Clinical Study */}
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <p className="font-bold text-primary mb-2">
-                    Theragon In-House Light<br />
-                    Microscope Clinical Study (12 Hours)
-                  </p>
-                  <img
-                    src={microscopeStudy}
-                    alt="Before and After microscope study"
-                    className="w-full rounded-lg mb-4"
-                  />
-                  <div className="flex justify-center gap-8">
-                    <span className="font-bold text-muted-foreground">Before</span>
-                    <span className="font-bold text-accent">After</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <img
+              src={productExplain}
+              alt="RinseGard BFD Factor biofilm mechanism - how it penetrates and dissolves biofilm in tonsil crypts"
+              className="w-full rounded-xl shadow-lg"
+            />
           </div>
         </section>
 
