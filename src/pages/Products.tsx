@@ -4,6 +4,7 @@ import heroProduct from "@/assets/hero-product.png";
 import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
 import halalLogo from "@/assets/halal-logo.png";
+import bfdFactorLogo from "@/assets/bfd-factor-logo-2.jpg";
 import { Check, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -177,13 +178,11 @@ const Products = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {/* BFD Factor Card */}
               <div className="bg-secondary rounded-xl p-6 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="inline-flex items-center gap-2 bg-navy px-6 py-3 rounded-lg mb-2">
-                    <span className="text-accent font-black text-2xl italic">BFD</span>
-                    <span className="text-primary-foreground font-bold text-lg">Factor™</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground">Biofilm Dissolving Factor (Patented)</p>
-                </div>
+                <img
+                  src={bfdFactorLogo}
+                  alt="BFD Factor - Biofilms Dissolving Factor (Patented)"
+                  className="max-h-24 w-auto"
+                />
               </div>
 
               {/* Clinical Study Link */}
