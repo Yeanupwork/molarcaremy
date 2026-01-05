@@ -32,19 +32,7 @@ const About = () => {
         </section>
 
         {/* Hero Section */}
-        <section className="bg-navy py-20">
-          <div className="container-custom mx-auto px-4 md:px-8 text-center">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              
-              <span className="text-accent font-bold text-2xl uppercase tracking-wide">
-            </span>
-            </div>
-            <h1 className="text-primary-foreground mb-6 max-w-4xl mx-auto">
-          </h1>
-            <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto">
-          </p>
-          </div>
-        </section>
+        
 
         {/* Technical Breakdown */}
         <section className="section-padding">
