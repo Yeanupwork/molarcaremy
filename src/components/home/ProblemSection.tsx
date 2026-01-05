@@ -1,17 +1,11 @@
 import biofilmImage from "@/assets/biofilm-illustration.jpg";
-
 const ProblemSection = () => {
-  return (
-    <section className="section-padding bg-light">
+  return <section className="section-padding bg-light">
       <div className="container-custom mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="order-2 lg:order-1">
-            <img
-              src={biofilmImage}
-              alt="Biofilm Shield Illustration"
-              className="rounded-2xl shadow-lg-custom w-full"
-            />
+            <img src={biofilmImage} alt="Biofilm Shield Illustration" className="rounded-2xl shadow-lg-custom w-full" />
           </div>
 
           {/* Content */}
@@ -20,11 +14,7 @@ const ProblemSection = () => {
             <h2 className="mb-6">
               The Barrier: The <span className="text-accent">"Biofilm Shield"</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Standard rinses often fail because they cannot penetrate the "Biofilm Shield"—a 
-              structured community of bacteria encased in an extracellular polymeric matrix 
-              hidden deep within tonsillar crypts.
-            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">Standard rinses often fail because they cannot penetrate the "Biofilm Shield", which is a structured community of bacteria encased in an extracellular polymeric matrix hidden deep within tonsillar crypts.</p>
             <div className="bg-card rounded-xl p-6 border border-border card-shadow">
               <h4 className="text-lg font-bold text-primary mb-3">Why Traditional Rinses Fail</h4>
               <ul className="space-y-2 text-muted-foreground">
@@ -45,8 +35,6 @@ const ProblemSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProblemSection;

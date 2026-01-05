@@ -1,8 +1,6 @@
 import { Shield, Beaker, CheckCircle2, Sparkles } from "lucide-react";
-
 const SolutionSection = () => {
-  return (
-    <section className="section-padding">
+  return <section className="section-padding">
       <div className="container-custom mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -46,44 +44,8 @@ const SolutionSection = () => {
         </div>
 
         {/* BFD Factor Section */}
-        <div className="bg-navy rounded-3xl p-8 md:p-12">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <Sparkles className="w-8 h-8 text-accent" />
-                <span className="text-accent font-bold text-lg uppercase tracking-wide">
-                  BFD Factor™
-                </span>
-              </div>
-              <h3 className="text-primary-foreground text-2xl md:text-3xl font-bold mb-4">
-                Powered by Patented Biofilm Dissolving Factor Technology
-              </h3>
-              <p className="text-primary-foreground/80 text-lg leading-relaxed">
-                RinseGard changes this paradigm through its Biofilm Dissolving Factor (BFD Factor™), 
-                a proprietary surfactant formulation designed to breach the matrix.
-              </p>
-            </div>
-            <div className="space-y-4">
-              {[
-                "Breaks through biofilm matrix",
-                "Reaches deep-seated bacteria",
-                "100-fold increase in diffusion",
-                "Prolonged contact with tissue",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 bg-primary-foreground/10 rounded-lg p-4"
-                >
-                  <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
-                  <span className="text-primary-foreground font-medium">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SolutionSection;
