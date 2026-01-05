@@ -7,10 +7,8 @@ import halalLogo from "@/assets/halal-logo.png";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-2.jpg";
 import { Check, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Products = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <main>
         {/* Hero Section - Symptoms */}
@@ -29,11 +27,7 @@ const Products = () => {
                 </p>
               </div>
               <div className="flex-1">
-                <img
-                  src={symptomsCollage}
-                  alt="Common flu symptoms - sneezing, coughing, sore throat"
-                  className="w-full rounded-xl shadow-lg"
-                />
+                <img src={symptomsCollage} alt="Common flu symptoms - sneezing, coughing, sore throat" className="w-full rounded-xl shadow-lg" />
               </div>
             </div>
           </div>
@@ -54,7 +48,9 @@ const Products = () => {
               <div>
                 {/* RinseGard Branding */}
                 <div className="mb-6">
-                  <h2 className="text-4xl md:text-5xl font-bold text-[#1a5f9e] italic mb-0" style={{ fontFamily: 'Georgia, serif' }}>
+                  <h2 className="text-4xl md:text-5xl font-bold text-[#1a5f9e] italic mb-0" style={{
+                  fontFamily: 'Georgia, serif'
+                }}>
                     RinseGard<span className="text-accent">✦</span>
                   </h2>
                   <p className="text-muted-foreground uppercase tracking-[0.3em] text-sm border-t border-b border-muted-foreground/30 py-1 inline-block">
@@ -130,11 +126,7 @@ const Products = () => {
               {/* Right: Product Image */}
               <div className="relative flex justify-center">
                 <div className="relative">
-                  <img
-                    src={heroProduct}
-                    alt="RinseGard Antiseptic Oral Rinse"
-                    className="max-w-xs md:max-w-sm w-full drop-shadow-2xl"
-                  />
+                  <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="max-w-xs md:max-w-sm w-full drop-shadow-2xl" />
                   {/* Cool Mint Badge */}
                   <div className="absolute bottom-4 right-0 bg-accent-green text-primary px-3 py-1 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
                     🌿 Cool Mint Flavour
@@ -160,11 +152,7 @@ const Products = () => {
         {/* Biofilm Mechanism Section */}
         <section className="py-8 bg-secondary">
           <div className="container-custom mx-auto px-4 md:px-8">
-            <img
-              src={productExplain}
-              alt="RinseGard BFD Factor biofilm mechanism - how it penetrates and dissolves biofilm in tonsil crypts"
-              className="w-full rounded-xl shadow-lg"
-            />
+            <img src={productExplain} alt="RinseGard BFD Factor biofilm mechanism - how it penetrates and dissolves biofilm in tonsil crypts" className="w-full rounded-xl shadow-lg" />
           </div>
         </section>
 
@@ -177,12 +165,8 @@ const Products = () => {
             
             <div className="grid md:grid-cols-3 gap-6">
               {/* BFD Factor Card */}
-              <div className="bg-secondary rounded-xl p-6 flex items-center justify-center">
-                <img
-                  src={bfdFactorLogo}
-                  alt="BFD Factor - Biofilms Dissolving Factor (Patented)"
-                  className="max-h-24 w-auto"
-                />
+              <div className="rounded-xl p-6 flex items-center justify-center bg-[primary-navy-dark] bg-zinc-50">
+                <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-h-24 w-auto" src="/lovable-uploads/1f6b7f5f-13c7-4e3c-9cf1-9a1301c4a75d.png" />
               </div>
 
               {/* Clinical Study Link */}
@@ -219,11 +203,7 @@ const Products = () => {
                 </h2>
               </div>
               <div className="flex items-center gap-6">
-                <img
-                  src={halalLogo}
-                  alt="HALAL Certification"
-                  className="w-24 h-24 object-contain"
-                />
+                <img src={halalLogo} alt="HALAL Certification" className="w-24 h-24 object-contain" />
                 <div className="text-primary-foreground/80 text-sm">
                   <p className="font-semibold">MS 2634</p>
                   <p>3 135-10/2024</p>
@@ -302,8 +282,6 @@ const Products = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Products;
