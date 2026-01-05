@@ -1,20 +1,14 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import bfdMechanism from "@/assets/bfd-mechanism.png";
-
 const About = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main>
         {/* BFD Factor Logo Section */}
         <section className="py-16 bg-[#e8eaed]">
           <div className="container-custom mx-auto flex flex-col items-center">
-            <img 
-              alt="BFD Factor - Biofilms Dissolving Factor (Patented)" 
-              src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" 
-              className="max-w-md w-full h-auto object-contain"
-            />
+            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" className="max-w-md w-full h-auto object-contain" />
             <p className="text-[#d4a017] text-lg font-medium mt-4">
               Biofilms Dissolving Factor (Patented)
             </p>
@@ -42,11 +36,7 @@ const About = () => {
 
         {/* BFD Mechanism Image Section */}
         <section className="w-full">
-          <img 
-            src={bfdMechanism} 
-            alt="The Mechanism: How Patented BFD Factor Unlocks the Biofilm" 
-            className="w-full h-auto object-contain"
-          />
+          <img src={bfdMechanism} alt="The Mechanism: How Patented BFD Factor Unlocks the Biofilm" className="w-full h-auto border-8 object-scale-down" />
         </section>
 
         {/* Bottom Text Section */}
@@ -59,8 +49,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
