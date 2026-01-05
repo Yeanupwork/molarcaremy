@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Beaker, Droplets, Sparkles } from "lucide-react";
+import bfdFactorLogo from "@/assets/bfd-factor-logo.jpg";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState<"poloxamer" | "polysorbate">("poloxamer");
@@ -133,20 +134,13 @@ const About = () => {
         </section>
 
         {/* Patent Section */}
-        <section className="section-padding bg-light">
-          <div className="container-custom mx-auto text-center">
-            <span className="badge badge-yellow mb-4">Intellectual Property</span>
-            <h2 className="mb-6">Our Patent</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-              The BFD Factor™ technology is protected by intellectual property rights, 
-              representing our commitment to innovation in oral healthcare.
-            </p>
-            <div className="inline-flex items-center gap-2 bg-card px-6 py-4 rounded-xl border border-border card-shadow">
-              <span className="text-2xl font-bold text-accent">1st</span>
-              <span className="text-primary font-semibold">
-                Patented Oral Rinse Technology in Malaysia
-              </span>
-            </div>
+        <section className="section-padding bg-[#e8eaed]">
+          <div className="container-custom mx-auto flex justify-center">
+            <img 
+              src={bfdFactorLogo} 
+              alt="BFD Factor - Biofilms Dissolving Factor (Patented)" 
+              className="max-w-2xl w-full h-auto"
+            />
           </div>
         </section>
       </main>
