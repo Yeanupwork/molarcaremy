@@ -24,6 +24,13 @@ const About = () => {
   return <div className="min-h-screen">
       <Header />
       <main>
+        {/* Patent Section */}
+        <section className="section-padding bg-[#e8eaed]">
+          <div className="container-custom mx-auto flex justify-center">
+            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-w-2xl w-full h-auto" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" />
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="bg-navy py-20">
           <div className="container-custom mx-auto px-4 md:px-8 text-center">
@@ -95,13 +102,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Patent Section */}
-        <section className="section-padding bg-[#e8eaed]">
-          <div className="container-custom mx-auto flex justify-center">
-            <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-w-2xl w-full h-auto" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" />
           </div>
         </section>
       </main>
