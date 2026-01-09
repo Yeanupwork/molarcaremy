@@ -25,31 +25,26 @@ const ProductShowcase = () => {
         <div className="grid lg:grid-cols-5 gap-8 items-center pt-8">
           {/* Left Column - 60% (3/5) */}
           <div className="lg:col-span-3 space-y-6">
-            {/* Brand Header */}
-            <div className="flex items-center gap-3">
-              <img 
-                src={rinsegardLogo} 
-                alt="RinseGard" 
-                className="h-14 md:h-18 w-auto" 
-              />
-              <Shield className="w-8 h-8 text-[#1F3A5F] stroke-1" />
-            </div>
-
-            {/* Product Title Group */}
-            <div className="space-y-1">
-              {/* Antiseptic with lines */}
-              <div className="flex items-center gap-3">
-                <div className="h-px w-8 bg-[#F59D42]"></div>
-                <span className="text-[#F59D42] uppercase tracking-[0.25em] text-sm font-light">
-                  Antiseptic
-                </span>
-                <div className="h-px w-8 bg-[#F59D42]"></div>
+            {/* Brand Header with Product Title */}
+            <div className="space-y-2">
+              {/* RinseGard Logo - 300% larger */}
+              <div className="flex items-center gap-4">
+                <img 
+                  src={rinsegardLogo} 
+                  alt="RinseGard" 
+                  className="h-32 md:h-40 lg:h-48 w-auto" 
+                />
+                <Shield className="w-12 h-12 text-[#1F3A5F] stroke-1" />
               </div>
-              
-              {/* Oral Rinse - Large Orange */}
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#F59D42] uppercase tracking-wide">
-                Oral Rinse
-              </h2>
+
+              {/* Antiseptic Oral Rinse - Combined */}
+              <div className="space-y-0">
+                <p className="text-[#F59D42] uppercase tracking-[0.3em] text-lg md:text-xl font-medium flex items-center gap-3">
+                  <span className="h-px w-10 bg-[#F59D42]"></span>
+                  Antiseptic Oral Rinse
+                  <span className="h-px w-10 bg-[#F59D42]"></span>
+                </p>
+              </div>
             </div>
 
             {/* Features Row */}
