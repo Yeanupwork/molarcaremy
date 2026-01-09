@@ -192,11 +192,15 @@ const ProductShowcase = () => {
 
             {/* Layer 3: Product Bottle */}
             <div className="relative z-10">
-              <img 
-                src={heroProduct} 
-                alt="RinseGard Antiseptic Oral Rinse" 
-                className="max-w-xs md:max-w-sm w-full drop-shadow-2xl"
-              />
+              <div className="relative">
+                {/* Gradient fade overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-50/80 pointer-events-none rounded-b-3xl" />
+                <img 
+                  src={heroProduct} 
+                  alt="RinseGard Antiseptic Oral Rinse" 
+                  className="max-w-xs md:max-w-sm w-full drop-shadow-2xl mix-blend-multiply"
+                />
+              </div>
               
               {/* Layer 4: Cool Mint Badge */}
               <div className="absolute -bottom-2 -right-4 flex items-center">
