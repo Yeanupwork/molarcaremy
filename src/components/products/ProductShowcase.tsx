@@ -159,45 +159,17 @@ const ProductShowcase = () => {
           </div>
 
           {/* Right Column - 40% (2/5) */}
-          <div className="lg:col-span-2 relative flex justify-center items-center min-h-[400px]">
-            {/* Layer 1: Shield Background */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-              <img 
-                src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" 
-                alt="" 
-                className="w-80 h-80 object-contain"
-              />
-            </div>
-
-            {/* Layer 2: Floating Particles/Molecules */}
-            <div className="absolute inset-0 pointer-events-none">
-              {/* Molecule 1 */}
-              <div className="absolute top-8 left-4 w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 opacity-60 animate-float shadow-lg"></div>
-              {/* Molecule 2 */}
-              <div className="absolute top-16 right-8 w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 opacity-50 animate-float animation-delay-1000 shadow-md"></div>
-              {/* Molecule 3 */}
-              <div className="absolute bottom-20 left-8 w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 opacity-40 animate-float animation-delay-2000 shadow-md"></div>
-              {/* Molecule 4 */}
-              <div className="absolute bottom-32 right-4 w-7 h-7 rounded-full bg-gradient-to-br from-teal-400 to-blue-500 opacity-55 animate-float animation-delay-500 shadow-lg"></div>
-              {/* Molecule 5 */}
-              <div className="absolute top-1/3 left-0 w-4 h-4 rounded-full bg-gradient-to-br from-blue-300 to-cyan-500 opacity-45 animate-float animation-delay-1500 shadow-sm"></div>
-            </div>
-
-            {/* Layer 3: Product Bottle */}
+          <div className="lg:col-span-2 relative flex justify-center items-center min-h-[500px]">
+            {/* Product Bottle - Static, enlarged, blended */}
             <div className="relative z-10">
-              <div className="relative">
-                {/* Gradient fade overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-50/80 pointer-events-none rounded-b-3xl" />
-                <img 
-                  src={heroProduct} 
-                  alt="RinseGard Antiseptic Oral Rinse" 
-                  className="max-w-xs md:max-w-sm w-full drop-shadow-xl opacity-90 mix-blend-multiply"
-                  style={{ filter: 'brightness(1.05) contrast(0.95)' }}
-                />
-              </div>
+              <img 
+                src={heroProduct} 
+                alt="RinseGard Antiseptic Oral Rinse" 
+                className="w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-lg"
+              />
               
-              {/* Layer 4: Cool Mint Badge */}
-              <div className="absolute -bottom-2 -right-4 flex items-center">
+              {/* Cool Mint Badge */}
+              <div className="absolute bottom-4 right-0 flex items-center">
                 <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
                   <span className="text-lg">🌿</span>
                   Cool Mint Flavour
