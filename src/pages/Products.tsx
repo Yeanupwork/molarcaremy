@@ -5,6 +5,7 @@ import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
 import halalLogo from "@/assets/halal-logo.png";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-2.jpg";
+import rinsegardLogo from "@/assets/rinsegard-logo.png";
 import { Check, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const Products = () => {
@@ -48,11 +49,7 @@ const Products = () => {
               <div>
                 {/* RinseGard Branding */}
                 <div className="mb-6">
-                  <h2 className="text-4xl md:text-5xl font-bold text-[#1a5f9e] italic mb-0" style={{
-                  fontFamily: 'Georgia, serif'
-                }}>
-                    RinseGard<span className="text-accent">✦</span>
-                  </h2>
+                  <img src={rinsegardLogo} alt="RinseGard" className="h-12 md:h-16 w-auto mb-2" />
                   <p className="text-muted-foreground uppercase tracking-[0.3em] text-sm border-t border-b border-muted-foreground/30 py-1 inline-block">
                     — Antiseptic —
                   </p>
