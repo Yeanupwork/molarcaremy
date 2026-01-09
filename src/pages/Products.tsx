@@ -49,7 +49,7 @@ const Products = () => {
               <div>
                 {/* RinseGard Branding */}
                 <div className="mb-6">
-                  <img src={rinsegardLogo} alt="RinseGard" className="h-24 md:h-32 w-auto mb-2" />
+                  <img src={rinsegardLogo} alt="RinseGard" className="h-60 md:h-80 w-auto mb-2" />
                   <p className="text-muted-foreground uppercase tracking-[0.3em] text-sm border-t border-b border-muted-foreground/30 py-1 inline-block">
                     — Antiseptic —
                   </p>
