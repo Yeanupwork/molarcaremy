@@ -37,14 +37,19 @@ const ProductShowcase = () => {
                 <Shield className="w-12 h-12 text-[#1F3A5F] stroke-1" />
               </div>
 
-              {/* Antiseptic Oral Rinse - Combined */}
-              <div className="space-y-0">
-                <p className="text-[#F59D42] uppercase tracking-[0.3em] text-lg md:text-xl font-medium flex items-center gap-3">
-                  <span className="h-px w-10 bg-[#F59D42]"></span>
-                  Antiseptic Oral Rinse
-                  <span className="h-px w-10 bg-[#F59D42]"></span>
-                </p>
+              {/* Antiseptic - thin with lines */}
+              <div className="flex items-center gap-4">
+                <div className="h-px w-12 bg-[#F59D42]"></div>
+                <span className="text-[#F59D42] uppercase tracking-[0.4em] text-sm md:text-base font-light">
+                  Antiseptic
+                </span>
+                <div className="h-px w-12 bg-[#F59D42]"></div>
               </div>
+              
+              {/* Oral Rinse - massive bold */}
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#F59D42] uppercase tracking-wider">
+                Oral Rinse
+              </h2>
             </div>
 
             {/* Features Row */}
