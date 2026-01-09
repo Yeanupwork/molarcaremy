@@ -6,6 +6,7 @@ import productExplain from "@/assets/product-explain.jpg";
 import halalLogo from "@/assets/halal-logo.png";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-2.jpg";
 import rinsegardLogo from "@/assets/rinsegard-logo.png";
+import bfdLogo from "@/assets/bfd-logo.png";
 import { Check, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const Products = () => {
@@ -85,11 +86,7 @@ const Products = () => {
 
                 {/* BFD Factor Logo */}
                 <div className="mb-6">
-                  <div className="inline-flex items-center gap-2 bg-navy px-4 py-2 rounded-lg">
-                    <span className="text-accent font-black text-xl italic">BFD</span>
-                    <span className="text-primary-foreground font-bold">Factor™</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-1">Biofilm Dissolving Factor (Patented)</p>
+                  <img src={bfdLogo} alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="h-16 md:h-20 w-auto" />
                 </div>
 
                 {/* Ingredients */}
