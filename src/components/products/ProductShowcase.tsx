@@ -198,7 +198,8 @@ const ProductShowcase = () => {
                 <img 
                   src={heroProduct} 
                   alt="RinseGard Antiseptic Oral Rinse" 
-                  className="max-w-xs md:max-w-sm w-full drop-shadow-2xl mix-blend-multiply"
+                  className="max-w-xs md:max-w-sm w-full drop-shadow-xl opacity-90 mix-blend-multiply"
+                  style={{ filter: 'brightness(1.05) contrast(0.95)' }}
                 />
               </div>
               
