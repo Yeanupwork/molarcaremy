@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import heroProduct from "@/assets/hero-product.png";
+import heroProduct from "@/assets/product-with-shield.png";
 import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
 import halalLogo from "@/assets/halal-logo.png";
