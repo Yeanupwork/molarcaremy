@@ -5,14 +5,7 @@ import { Check, Ban, Shield } from "lucide-react";
 
 const ProductShowcase = () => {
   return (
-    <section className="relative py-16 overflow-hidden bg-gradient-radial from-blue-50/80 via-white to-slate-100/60">
-      {/* Background Shield Watermark */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
-        <div 
-          className="w-[900px] h-[900px] bg-contain bg-center bg-no-repeat" 
-          style={{ backgroundImage: `url('/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png')` }} 
-        />
-      </div>
+    <section className="relative py-16 overflow-hidden bg-white">
 
       <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
         {/* Alcohol Free Badge - Absolute Top Left */}
