@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 import { Phone, Globe, MapPin } from "lucide-react";
+import molarcareLogo from "@/assets/molarcare-logo.png";
 const Footer = () => {
   return <footer className="bg-navy py-16">
       <div className="container-custom mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-1 mb-4">
-              <span className="text-2xl font-bold text-primary-foreground">Molar</span>
-              <span className="text-2xl font-bold text-accent">Care</span>
-              <span className="text-accent text-2xl">✦</span>
+            <Link to="/" className="block mb-4">
+              <img src={molarcareLogo} alt="MolarCare" className="h-10 w-auto" />
             </Link>
             
           </div>
