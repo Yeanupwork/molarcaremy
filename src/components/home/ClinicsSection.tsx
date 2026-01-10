@@ -49,7 +49,7 @@ const clinics = [
 
 const ClinicsSection = () => {
   return (
-    <section className="section-padding">
+    <section id="clinics" className="section-padding">
       <div className="container-custom mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
