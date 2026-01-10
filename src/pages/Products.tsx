@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import ProductShowcase from "@/components/products/ProductShowcase";
 import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
+import bfdFactorLogo from "@/assets/bfd-factor-logo-new.png";
 import { AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -64,7 +65,7 @@ const Products = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {/* BFD Factor Card */}
               <div className="rounded-xl p-6 flex items-center justify-center bg-[primary-navy-dark] bg-zinc-50">
-                <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-h-24 w-auto" src="/lovable-uploads/1f6b7f5f-13c7-4e3c-9cf1-9a1301c4a75d.png" />
+                <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-h-24 w-auto" src={bfdFactorLogo} />
               </div>
 
               {/* Clinical Study Link */}
