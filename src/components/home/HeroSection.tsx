@@ -27,7 +27,10 @@ const HeroSection = () => {
               <strong className="text-accent">Biofilm Dissolving Technology</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary group">
+              <Button 
+                className="btn-primary group"
+                onClick={() => document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Where to Find
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>

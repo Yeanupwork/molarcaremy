@@ -84,7 +84,18 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-primary">Find a Clinic</Button>
+            <Button 
+              className="btn-primary"
+              onClick={() => {
+                if (location.pathname === '/') {
+                  document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#clinics';
+                }
+              }}
+            >
+              Find a Clinic
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -131,7 +142,19 @@ const Header = () => {
               </div>
             ))}
             <div className="pt-4">
-              <Button className="btn-primary w-full">Find a Clinic</Button>
+              <Button 
+                className="btn-primary w-full"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  if (location.pathname === '/') {
+                    document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    window.location.href = '/#clinics';
+                  }
+                }}
+              >
+                Find a Clinic
+              </Button>
             </div>
           </div>
         )}
