@@ -4,6 +4,7 @@ import ProductShowcase from "@/components/products/ProductShowcase";
 import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-new.png";
+import halalCertificate from "@/assets/halal-certificate.jpg";
 import { AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -95,18 +96,27 @@ const Products = () => {
         {/* HALAL Section */}
         <section className="bg-navy py-12">
           <div className="container-custom mx-auto px-4 md:px-8">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              <div className="text-center md:text-left">
-                <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              {/* Left: Heading and Badge */}
+              <div className="text-center md:text-left flex-1">
+                <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
                   Halal Certified
                 </h2>
+                <p className="text-primary-foreground/80 text-lg">
+                  Certified by JAKIM - Jabatan Kemajuan Islam Malaysia
+                </p>
+                <p className="text-primary-foreground/60 text-sm mt-2">
+                  Ref: JAKIM.700-2/3/3 135-10/2024
+                </p>
               </div>
-              <div className="flex items-center gap-6">
-                
-                <div className="text-primary-foreground/80 text-sm">
-                  
-                  
-                </div>
+              
+              {/* Right: Certificate Image */}
+              <div className="flex-shrink-0">
+                <img 
+                  src={halalCertificate} 
+                  alt="Halal Certificate - JAKIM Certified" 
+                  className="max-h-80 w-auto rounded-lg shadow-lg border-4 border-white/20"
+                />
               </div>
             </div>
           </div>
