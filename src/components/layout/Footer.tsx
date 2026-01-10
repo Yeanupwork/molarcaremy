@@ -62,10 +62,15 @@ const Footer = () => {
                   Suite 45, Unit 2-1, Level 2, Tower 3, UOA Business Park, No 1, Jalan Pengaturcara U1/51, Seksyen U1, 40150 Shah Alam, Selangor, Malaysia
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              <a 
+                href="https://wa.me/60102472600" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors"
+              >
                 <Phone className="w-4 h-4" />
                 <span>+6010-247 2600</span>
-              </div>
+              </a>
               <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Globe className="w-4 h-4" />
                 <a href="https://theragonhealthcare.com" className="hover:text-foreground transition-colors">
