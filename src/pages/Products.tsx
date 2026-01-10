@@ -20,7 +20,7 @@ const Products = () => {
                 <h1 className="text-primary-foreground text-5xl md:text-6xl font-bold mb-2">
                   Experiencing<br />These Symptoms?
                 </h1>
-                <p className="text-accent font-semibold text-lg mb-1">
+                <p className="text-accent font-semibold text-2xl mb-1">
                   Sneeze? Cough? Sore Throat?
                 </p>
                 <p className="text-primary-foreground/70 text-sm">
