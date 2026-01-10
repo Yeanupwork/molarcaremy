@@ -66,7 +66,7 @@ const Products = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {/* BFD Factor Card */}
               <div className="rounded-xl p-6 flex items-center justify-center bg-[primary-navy-dark] bg-zinc-50">
-                <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-h-24 w-auto" src={bfdFactorLogo} />
+                <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="max-h-36 w-auto" src={bfdFactorLogo} />
               </div>
 
               {/* Clinical Study Link */}
