@@ -136,7 +136,7 @@ const ProductShowcase = () => {
           <div className="lg:col-span-2 relative flex justify-center items-center min-h-[500px]">
             {/* Product Bottle - Static, enlarged, blended */}
             <div className="relative z-10">
-              <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-lg" />
+              <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="w-full max-w-md lg:max-w-lg xl:max-w-xl" />
               
               {/* Cool Mint Badge */}
               <div className="absolute bottom-4 right-0 flex items-center">
