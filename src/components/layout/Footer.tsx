@@ -79,7 +79,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-6">
           <p className="text-center text-muted-foreground text-sm">
-            © 2026 MolarCare. All Rights Reserved.
+            Copyright (c) MolarCare. All Right Reserved.
           </p>
         </div>
       </div>
