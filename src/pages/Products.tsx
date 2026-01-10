@@ -17,7 +17,7 @@ const Products = () => {
           <div className="container-custom mx-auto px-4 md:px-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">
-                <h1 className="text-primary-foreground text-3xl md:text-4xl font-bold mb-2">
+                <h1 className="text-primary-foreground text-5xl md:text-6xl font-bold mb-2">
                   Experiencing<br />These Symptoms?
                 </h1>
                 <p className="text-accent font-semibold text-lg mb-1">
