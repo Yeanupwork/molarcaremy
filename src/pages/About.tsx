@@ -157,7 +157,7 @@ const About = () => {
                   <div className="w-16 h-16 bg-red-500/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <div className="w-8 h-8 bg-red-400 rounded-full opacity-50" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Standard Chlorhexidine</h3>
+                  <h3 className="text-xl font-bold mb-3 text-white">Standard Chlorhexidine</h3>
                   <p className="text-white/70">Limited Penetration</p>
                   <div className="mt-6 h-2 bg-white/20 rounded-full overflow-hidden">
                     <div className="h-full w-1/4 bg-red-400 rounded-full" />
