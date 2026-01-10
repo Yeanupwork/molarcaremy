@@ -1,11 +1,9 @@
 import heroProduct from "@/assets/product-with-shield.png";
 import rinsegardLogo from "@/assets/rinsegard-logo.png";
 import bfdLogo from "@/assets/bfd-logo.png";
-import { Check, Ban, Shield } from "lucide-react";
-
+import { Check, Ban } from "lucide-react";
 const ProductShowcase = () => {
-  return (
-    <section className="relative py-16 overflow-hidden bg-white">
+  return <section className="relative py-16 overflow-hidden bg-white">
 
       <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
         {/* Alcohol Free Badge - Absolute Top Left */}
@@ -22,12 +20,8 @@ const ProductShowcase = () => {
             <div className="space-y-2">
               {/* RinseGard Logo - 300% larger */}
               <div className="flex items-center gap-4">
-                <img 
-                  src={rinsegardLogo} 
-                  alt="RinseGard" 
-                  className="h-32 md:h-40 lg:h-48 w-auto" 
-                />
-                <Shield className="w-12 h-12 text-[#1F3A5F] stroke-1" />
+                <img src={rinsegardLogo} alt="RinseGard" className="h-32 md:h-40 lg:h-48 w-auto" />
+                
               </div>
 
               {/* Antiseptic - thin with lines */}
@@ -85,11 +79,7 @@ const ProductShowcase = () => {
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 pt-4">
               {/* BFD Factor Logo */}
               <div className="flex-shrink-0">
-                <img 
-                  src={bfdLogo} 
-                  alt="BFD Factor - Biofilms Dissolving Factor (Patented)" 
-                  className="h-10 md:h-12 w-auto" 
-                />
+                <img src={bfdLogo} alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="h-10 md:h-12 w-auto" />
               </div>
 
               {/* Ingredients Formula */}
@@ -115,27 +105,11 @@ const ProductShowcase = () => {
                   {/* Laurel wreath SVG */}
                   <svg viewBox="0 0 64 64" className="w-full h-full text-[#D4AF37]">
                     {/* Left laurel */}
-                    <path 
-                      d="M16 32c-2-8 2-16 8-20c-4 6-4 14 0 20c-4 6-4 14 0 20c-6-4-10-12-8-20z" 
-                      fill="currentColor" 
-                      opacity="0.9"
-                    />
-                    <path 
-                      d="M20 32c-2-6 1-12 6-16c-3 5-3 11 0 16c-3 5-3 11 0 16c-5-4-8-10-6-16z" 
-                      fill="currentColor" 
-                      opacity="0.7"
-                    />
+                    <path d="M16 32c-2-8 2-16 8-20c-4 6-4 14 0 20c-4 6-4 14 0 20c-6-4-10-12-8-20z" fill="currentColor" opacity="0.9" />
+                    <path d="M20 32c-2-6 1-12 6-16c-3 5-3 11 0 16c-3 5-3 11 0 16c-5-4-8-10-6-16z" fill="currentColor" opacity="0.7" />
                     {/* Right laurel */}
-                    <path 
-                      d="M48 32c2-8-2-16-8-20c4 6 4 14 0 20c4 6 4 14 0 20c6-4 10-12 8-20z" 
-                      fill="currentColor" 
-                      opacity="0.9"
-                    />
-                    <path 
-                      d="M44 32c2-6-1-12-6-16c3 5 3 11 0 16c3 5 3 11 0 16c5-4 8-10 6-16z" 
-                      fill="currentColor" 
-                      opacity="0.7"
-                    />
+                    <path d="M48 32c2-8-2-16-8-20c4 6 4 14 0 20c4 6 4 14 0 20c6-4 10-12 8-20z" fill="currentColor" opacity="0.9" />
+                    <path d="M44 32c2-6-1-12-6-16c3 5 3 11 0 16c3 5 3 11 0 16c5-4 8-10 6-16z" fill="currentColor" opacity="0.7" />
                     {/* Stars */}
                     <circle cx="32" cy="18" r="2" fill="currentColor" />
                     <circle cx="26" cy="20" r="1.5" fill="currentColor" opacity="0.7" />
@@ -162,11 +136,7 @@ const ProductShowcase = () => {
           <div className="lg:col-span-2 relative flex justify-center items-center min-h-[500px]">
             {/* Product Bottle - Static, enlarged, blended */}
             <div className="relative z-10">
-              <img 
-                src={heroProduct} 
-                alt="RinseGard Antiseptic Oral Rinse" 
-                className="w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-lg"
-              />
+              <img src={heroProduct} alt="RinseGard Antiseptic Oral Rinse" className="w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-lg" />
               
               {/* Cool Mint Badge */}
               <div className="absolute bottom-4 right-0 flex items-center">
@@ -179,8 +149,6 @@ const ProductShowcase = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProductShowcase;
