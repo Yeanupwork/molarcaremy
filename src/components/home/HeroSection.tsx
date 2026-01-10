@@ -17,7 +17,7 @@ const HeroSection = () => {
             <span className="badge badge-yellow mb-6 inline-flex">
               1st Patented in Malaysia
             </span>
-            <h1 className="text-primary-foreground mb-6 leading-tight">
+            <h1 className="text-primary-foreground mb-6 leading-tight text-2xl md:text-3xl lg:text-4xl">
               Bridge the Immunity Gap:{" "}
               <span className="text-accent">Immediate Flu Protection</span> with RinseGard.
             </h1>
