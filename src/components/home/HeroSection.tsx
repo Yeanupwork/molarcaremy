@@ -3,15 +3,15 @@ import heroProduct from "@/assets/hero-product.png";
 import shieldOverlay from "@/assets/shield-overlay.png";
 import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
-  return <section className="bg-navy min-h-[85vh] flex items-center relative overflow-hidden">
+  return <section className="bg-navy min-h-[90vh] flex items-center relative overflow-hidden pt-24 pb-20 md:pt-28 md:pb-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-accent blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-48 h-48 rounded-full bg-accent-green blur-3xl" />
+        <div className="absolute top-32 right-20 w-64 h-64 rounded-full bg-accent blur-3xl" />
+        <div className="absolute bottom-32 left-20 w-48 h-48 rounded-full bg-accent-green blur-3xl" />
       </div>
 
-      <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[70vh]">
+      <div className="container-custom mx-auto px-6 md:px-12 lg:px-16 relative z-10">
+        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <div className="animate-slide-up">
             <span className="badge badge-yellow mb-6 inline-flex">
