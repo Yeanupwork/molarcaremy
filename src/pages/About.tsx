@@ -170,7 +170,7 @@ const About = () => {
                   <div className="w-16 h-16 bg-[#d4a017]/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <div className="w-8 h-8 bg-[#d4a017] rounded-full" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">With BFD Factor™</h3>
+                  <h3 className="text-xl font-bold mb-3 text-white">With BFD Factor™</h3>
                   <p className="text-[#d4a017]">Deep Biofilm Access</p>
                   <div className="mt-6 h-2 bg-white/20 rounded-full overflow-hidden">
                     <div className="h-full w-full bg-[#d4a017] rounded-full" />
