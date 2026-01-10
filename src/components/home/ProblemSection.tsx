@@ -4,7 +4,7 @@ const features = [
   {
     icon: Shield,
     title: "Dual-Action Formula",
-    description: "0.2% Chlorhexidine Digluconate + 0.1% CPC for comprehensive protection against bacteria and enveloped viruses."
+    description: "0.2% Chlorhexidine Digluconate + 0.1% CPC for comprehensive protection against bacteria and viruses."
   },
   {
     icon: FlaskConical,
