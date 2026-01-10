@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src={molarcareLogo} 
                 alt="MolarCare" 
-                className="h-8 w-auto"
+                className="h-40 w-auto"
               />
             </Link>
           </div>
