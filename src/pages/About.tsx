@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import bfdMechanism from "@/assets/bfd-mechanism.png";
+import bfdFactorHero from "@/assets/bfd-factor-logo-hero.png";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Droplets, FlaskConical, TrendingUp } from "lucide-react";
 const RevealSection = ({
@@ -32,7 +33,7 @@ const About = () => {
         <section className="py-20 bg-gradient-to-b from-[#e8eaed] to-white">
           <div className="container-custom mx-auto text-center">
             <RevealSection>
-              <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" src="/lovable-uploads/cb0aeae5-46f1-477c-a7b7-401df5ecf27b.png" className="max-w-sm w-full h-auto object-contain mx-auto mb-6" />
+              <img alt="BFD Factor - Biofilms Dissolving Factor (Patented)" src={bfdFactorHero} className="max-w-md w-full h-auto object-contain mx-auto mb-6" />
             </RevealSection>
             <RevealSection delay={200}>
               <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6 leading-tight">
