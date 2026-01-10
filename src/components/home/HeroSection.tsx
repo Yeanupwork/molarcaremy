@@ -49,7 +49,7 @@ const HeroSection = () => {
               <img 
                 src={heroProduct} 
                 alt="RinseGard Antiseptic Oral Rinse" 
-                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl" 
+                className="relative z-10 w-full h-auto rounded-2xl" 
               />
             </div>
           </div>
