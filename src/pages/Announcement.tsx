@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft } from "lucide-react";
+import rinsegardLaunch from "@/assets/rinsegard-launch.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -9,7 +10,7 @@ const announcements = [
     id: 1,
     title: "RinseGard Product Launch",
     description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
-    image: "/placeholder.svg",
+    image: rinsegardLaunch,
   },
   {
     id: 2,
@@ -102,8 +103,12 @@ const Announcement = () => {
                 </div>
                 
                 {/* Image */}
-                <div className="bg-muted aspect-video md:aspect-auto flex items-center justify-center min-h-[250px]">
-                  <span className="text-muted-foreground text-lg font-medium">IMAGE</span>
+                <div className="bg-muted aspect-video md:aspect-auto min-h-[250px] overflow-hidden">
+                  <img 
+                    src={announcements[currentSlide].image} 
+                    alt={announcements[currentSlide].title}
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
               </div>
             </div>
