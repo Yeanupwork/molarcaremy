@@ -51,7 +51,7 @@ const events = [
     time: "                                                                          ",
     status: "ongoing" as const,
     title: "Community Health Day",
-    description: "Free dental check-ups and oral health education for the local community.",
+    description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
   },
 ];
 
