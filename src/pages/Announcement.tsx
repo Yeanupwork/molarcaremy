@@ -42,7 +42,7 @@ const events = [
     date: "Nov 2025",
     time: "01.11.25 | 10AM",
     status: "ended" as const,
-    title: "Oral Care Workshop",
+    title: "Collaboration: RinseGard x Independent Clinics",
     description: "A comprehensive workshop covering best practices for maintaining optimal oral hygiene.",
   },
   {
