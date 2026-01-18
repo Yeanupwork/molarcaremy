@@ -40,7 +40,7 @@ const events = [
   {
     id: 3,
     date: "Nov 2025",
-    time: "9AM",
+    time: "01.11.25 | 10AM",
     status: "ended" as const,
     title: "Oral Care Workshop",
     description: "A comprehensive workshop covering best practices for maintaining optimal oral hygiene.",
