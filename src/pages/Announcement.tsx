@@ -47,7 +47,7 @@ const events = [
   },
   {
     id: 4,
-    date: "05.11.25",
+    date: "Oct 2025 ",
     time: "11AM",
     status: "ended" as const,
     title: "Community Health Day",
