@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 const announcements = [
   {
     id: 1,
-    title: "RinseGard Launch Event",
+    title: "RinseGard Product Launch",
     description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
     image: "/placeholder.svg",
   },
