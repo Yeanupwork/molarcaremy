@@ -35,7 +35,7 @@ const events = [
     time: "10AM",
     status: "upcoming" as const,
     title: "Webinar (Only for Healthcare Professional)",
-    description: "Join us for an interactive seminar on the importance of biofilm management in oral health.",
+    description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
   },
   {
     id: 2,
