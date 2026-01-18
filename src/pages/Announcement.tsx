@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import rinsegardLaunchImg from "@/assets/rinsegard-launch.png";
 import independentClinicImg from "@/assets/independent-clinic.jpg";
+import webinarFlyerImg from "@/assets/webinar-flyer.jpg";
 
 const announcements = [
   {
@@ -23,7 +24,7 @@ const announcements = [
     id: 3,
     title: "Webinar (Only for Healthcare Professional)",
     description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
-    image: "/placeholder.svg",
+    image: webinarFlyerImg,
   },
 ];
 
