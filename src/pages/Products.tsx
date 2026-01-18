@@ -8,7 +8,6 @@ import halalCertificate from "@/assets/halal-certificate.jpg";
 import { AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-
 const Products = () => {
   return <div className="min-h-screen bg-background">
       <Header />
@@ -115,18 +114,10 @@ const Products = () => {
               <div className="flex-shrink-0">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <img 
-                      src={halalCertificate} 
-                      alt="Halal Certificate - JAKIM Certified" 
-                      className="max-h-80 w-auto rounded-lg shadow-lg border-4 border-white/20 cursor-pointer hover:scale-105 transition-transform duration-300"
-                    />
+                    <img src={halalCertificate} alt="Halal Certificate - JAKIM Certified" className="max-h-80 w-auto rounded-lg shadow-lg border-4 border-white/20 cursor-pointer hover:scale-105 transition-transform duration-300" />
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl w-full p-2 bg-transparent border-none">
-                    <img 
-                      src={halalCertificate} 
-                      alt="Halal Certificate - JAKIM Certified" 
-                      className="w-full h-auto rounded-lg"
-                    />
+                    <img src={halalCertificate} alt="Halal Certificate - JAKIM Certified" className="w-full h-auto rounded-lg" />
                   </DialogContent>
                 </Dialog>
               </div>
@@ -164,7 +155,7 @@ const Products = () => {
               <div className="bg-white rounded-xl p-6 border border-border shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold text-lg">30<br /><span className="text-xs">SEC</span></span>
+                    <span className="text-primary font-bold text-lg text-center"><br /><span className="text-xs">SEC</span></span>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Each Time</p>
