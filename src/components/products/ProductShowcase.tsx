@@ -1,5 +1,5 @@
 import heroProduct from "@/assets/product-with-shield.png";
-import rinsegardLogo from "@/assets/rinsegard-logo.png";
+import rinsegardLogo from "@/assets/rinsegard-logo-stretch.png";
 import bfdLogo from "@/assets/bfd-logo.png";
 import { Check, Ban } from "lucide-react";
 const ProductShowcase = () => {
