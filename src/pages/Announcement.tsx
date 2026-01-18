@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import rinsegardLaunchImg from "@/assets/rinsegard-launch.png";
 import independentClinicImg from "@/assets/independent-clinic.jpg";
-import webinarFlyerImg from "@/assets/webinar-flyer.jpg";
+import webinarFlyerImg from "@/assets/webinar-flyer.png";
 
 const announcements = [
   {
