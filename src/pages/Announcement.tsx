@@ -38,14 +38,6 @@ const events = [
     description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
   },
   {
-    id: 2,
-    date: "20.02.26",
-    time: "2PM",
-    status: "upcoming" as const,
-    title: "RinseGard Product Demo",
-    description: "Experience the power of BFD Factor technology firsthand at our product demonstration event.",
-  },
-  {
     id: 3,
     date: "10.12.25",
     time: "9AM",
