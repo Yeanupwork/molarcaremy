@@ -22,7 +22,7 @@ const announcements = [
   {
     id: 3,
     title: "Webinar (Only for Healthcare Professional)",
-    description: "MolarCare partners with leading dental clinics across Malaysia to bring RinseGard to more patients.",
+    description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
     image: "/placeholder.svg",
   },
 ];
