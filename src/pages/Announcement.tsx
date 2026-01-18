@@ -43,7 +43,7 @@ const events = [
     time: "01.11.25 | 10AM",
     status: "ended" as const,
     title: "Collaboration: RinseGard x Independent Clinics",
-    description: "A comprehensive workshop covering best practices for maintaining optimal oral hygiene.",
+    description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes. We are excited to share this evidence-based research with independent clinics nationwide.",
   },
   {
     id: 4,
