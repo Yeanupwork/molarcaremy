@@ -41,7 +41,7 @@ const events = [
     id: 3,
     date: "Nov 2025",
     time: "                                                                                                                    ",
-    status: "ended" as const,
+    status: "ongoing" as const,
     title: "Collaboration: RinseGard x Independent Clinics",
     description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes. We are excited to share this evidence-based research with independent clinics nationwide.",
   },
@@ -162,9 +162,9 @@ const Announcement = () => {
                   {/* Content */}
                   <div className="flex-1 p-6 sm:p-8">
                     <span className={`text-sm font-semibold uppercase tracking-wide ${
-                      event.status === "upcoming" ? "text-accent" : "text-lime-600"
+                      event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"
                     }`}>
-                      {event.status === "upcoming" ? "Up Coming Event" : "Event Ended"}
+                      {event.status === "upcoming" ? "Up Coming Event" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
                     </span>
                     <h3 className="text-xl md:text-2xl font-bold text-navy mt-1 mb-2">
                       {event.title}
