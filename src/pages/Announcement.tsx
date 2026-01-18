@@ -14,7 +14,7 @@ const announcements = [
   },
   {
     id: 2,
-    title: "New Clinical Study Results",
+    title: "Collaboration: RinseGard x Independent Clinics",
     description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes.",
     image: "/placeholder.svg",
   },
