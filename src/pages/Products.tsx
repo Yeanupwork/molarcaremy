@@ -5,6 +5,7 @@ import symptomsCollage from "@/assets/symptoms-collage.jpg";
 import productExplain from "@/assets/product-explain.jpg";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-new.png";
 import halalCertificate from "@/assets/halal-certificate.jpg";
+import secIcon from "@/assets/30-sec-icon.png";
 import { AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -154,9 +155,7 @@ const Products = () => {
               {/* Step 2 */}
               <div className="bg-white rounded-xl p-6 border border-border shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold text-lg text-center"><br /><span className="text-xs">SEC</span></span>
-                  </div>
+                  <img src={secIcon} alt="30 seconds" className="w-14 h-14 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">Each Time</p>
                     <p className="font-bold text-primary text-lg">30 Seconds</p>
