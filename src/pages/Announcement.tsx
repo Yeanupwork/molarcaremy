@@ -50,7 +50,7 @@ const events = [
     date: "Oct 2025 ",
     time: "                                                                          ",
     status: "ongoing" as const,
-    title: "Community Health Day",
+    title: "RinseGard Product Launching",
     description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
   },
 ];
