@@ -6,6 +6,7 @@ import productExplain from "@/assets/product-explain.jpg";
 import bfdFactorLogo from "@/assets/bfd-factor-logo-new.png";
 import halalCertificate from "@/assets/halal-certificate.jpg";
 import secIcon from "@/assets/30-sec-icon.png";
+import daysIcon from "@/assets/5-7-days-icon.png";
 import { AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -179,9 +180,7 @@ const Products = () => {
               {/* Step 4 */}
               <div className="bg-white rounded-xl p-6 border border-border shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold text-xl">5-7</span>
-                  </div>
+                  <img src={daysIcon} alt="5-7 days" className="w-14 h-14 flex-shrink-0" />
                   <div>
                     <p className="font-bold text-primary">Gargle for<br />4-5 Days</p>
                     <p className="text-sm text-muted-foreground mt-1">(coupled with antibiotic treatment course)</p>
