@@ -31,7 +31,7 @@ const announcements = [
 const events = [
   {
     id: 1,
-    date: "15.01.26",
+    date: "Feb 2026",
     time: "10AM",
     status: "upcoming" as const,
     title: "Dental Health Seminar 2026",
