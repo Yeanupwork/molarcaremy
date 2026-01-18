@@ -146,7 +146,7 @@ const Products = () => {
                   </div>
                   <div>
                     <p className="font-bold text-primary">Rinse 1-2 Times<br />Per Day</p>
-                    <p className="text-sm text-muted-foreground mt-1">Depends on severity</p>
+                    
                   </div>
                 </div>
               </div>
