@@ -17,7 +17,7 @@ const announcements = [
   {
     id: 2,
     title: "Collaboration: RinseGard x Independent Clinics",
-    description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes.",
+    description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes. We are excited to share this evidence-based research with independent clinics nationwide.",
     image: independentClinicImg,
   },
   {
