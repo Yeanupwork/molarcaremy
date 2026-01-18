@@ -1,11 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft, X } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import {
+  Dialog,
+  DialogContent,
+  DialogOverlay,
+} from "@/components/ui/dialog";
 import rinsegardLaunchImg from "@/assets/rinsegard-launch.png";
 import independentClinicImg from "@/assets/independent-clinic.jpg";
 import webinarFlyerImg from "@/assets/webinar-flyer.png";
+import rinsegardFlyerImg from "@/assets/rinsegard-flyer.png";
 
 const announcements = [
   {
@@ -13,18 +18,21 @@ const announcements = [
     title: "RinseGard Product Launch",
     description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
     image: rinsegardLaunchImg,
+    detailImage: rinsegardFlyerImg,
   },
   {
     id: 2,
     title: "Collaboration: RinseGard x Independent Clinics",
     description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes. We are excited to share this evidence-based research with independent clinics nationwide.",
     image: independentClinicImg,
+    detailImage: independentClinicImg,
   },
   {
     id: 3,
     title: "Webinar (Only for Healthcare Professional)",
     description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
     image: webinarFlyerImg,
+    detailImage: webinarFlyerImg,
   },
 ];
 
@@ -57,6 +65,7 @@ const events = [
 
 const Announcement = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % announcements.length);
@@ -88,12 +97,12 @@ const Announcement = () => {
                   <p className="text-muted-foreground mb-6">
                     {announcements[currentSlide].description}
                   </p>
-                  <Link 
-                    to="#" 
+                  <button 
+                    onClick={() => setSelectedImage(announcements[currentSlide].detailImage)}
                     className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all"
                   >
                     Read More <ChevronRight className="w-4 h-4" />
-                  </Link>
+                  </button>
                 </div>
                 
                 {/* Image */}
@@ -181,6 +190,25 @@ const Announcement = () => {
       </main>
 
       <Footer />
+
+      {/* Full-screen Image Modal */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-none shadow-none">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Full size announcement"
+              className="w-full h-full max-h-[90vh] object-contain rounded-lg"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
