@@ -4,6 +4,7 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import rinsegardLaunchImg from "@/assets/rinsegard-launch.png";
+import independentClinicImg from "@/assets/independent-clinic.jpg";
 
 const announcements = [
   {
@@ -16,7 +17,7 @@ const announcements = [
     id: 2,
     title: "Collaboration: RinseGard x Independent Clinics",
     description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes.",
-    image: "/placeholder.svg",
+    image: independentClinicImg,
   },
   {
     id: 3,
