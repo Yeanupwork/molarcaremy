@@ -21,7 +21,7 @@ const announcements = [
   },
   {
     id: 3,
-    title: "Partnership Announcement",
+    title: "Webinar (Only for Healthcare Professional)",
     description: "MolarCare partners with leading dental clinics across Malaysia to bring RinseGard to more patients.",
     image: "/placeholder.svg",
   },
