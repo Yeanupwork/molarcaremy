@@ -39,7 +39,7 @@ const events = [
   },
   {
     id: 3,
-    date: "10.12.25",
+    date: "Nov 2025",
     time: "9AM",
     status: "ended" as const,
     title: "Oral Care Workshop",
