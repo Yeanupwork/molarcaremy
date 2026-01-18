@@ -18,9 +18,9 @@ const ProductShowcase = () => {
           <div className="lg:col-span-3 space-y-6">
             {/* Brand Header with Product Title */}
             <div className="space-y-2">
-              {/* RinseGard Logo - 300% larger, overflow into product image */}
-              <div className="flex items-center gap-4 relative z-20 lg:w-[120%]">
-                <img src={rinsegardLogo} alt="RinseGard" className="h-32 md:h-40 lg:h-48 w-auto" />
+              {/* RinseGard Logo - stretched to touch product image */}
+              <div className="flex items-center gap-4 relative z-20 lg:w-[140%] xl:w-[150%]">
+                <img src={rinsegardLogo} alt="RinseGard" className="h-32 md:h-40 lg:h-56 xl:h-64 w-auto" />
                 
               </div>
 
