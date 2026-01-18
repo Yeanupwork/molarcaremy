@@ -49,7 +49,7 @@ const events = [
     id: 4,
     date: "Oct 2025 ",
     time: "11AM",
-    status: "ended" as const,
+    status: "ongoing" as const,
     title: "Community Health Day",
     description: "Free dental check-ups and oral health education for the local community.",
   },
