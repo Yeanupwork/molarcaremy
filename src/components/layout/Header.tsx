@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import molarcareLogo from "@/assets/molarcare-logo.jpg";
@@ -8,6 +8,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToClinic = () => {
+    if (location.pathname === '/') {
+      document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
 
   const navItems = [
     { label: "Home", path: "/" },
@@ -86,13 +98,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               className="btn-primary"
-              onClick={() => {
-                if (location.pathname === '/') {
-                  document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  window.location.href = '/#clinics';
-                }
-              }}
+              onClick={scrollToClinic}
             >
               Find a Clinic
             </Button>
@@ -146,11 +152,7 @@ const Header = () => {
                 className="btn-primary w-full"
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  if (location.pathname === '/') {
-                    document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' });
-                  } else {
-                    window.location.href = '/#clinics';
-                  }
+                  scrollToClinic();
                 }}
               >
                 Find a Clinic
