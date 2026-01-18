@@ -34,7 +34,7 @@ const events = [
     date: "Feb 2026",
     time: "10AM",
     status: "upcoming" as const,
-    title: "Dental Health Seminar 2026",
+    title: "Webinar (Only for Healthcare Professional)",
     description: "Join us for an interactive seminar on the importance of biofilm management in oral health.",
   },
   {
