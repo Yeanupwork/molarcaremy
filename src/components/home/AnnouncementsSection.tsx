@@ -1,27 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft } from "lucide-react";
-
-const announcements = [
-  {
-    id: 1,
-    title: "RinseGard Launch Event",
-    description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 2,
-    title: "New Clinical Study Results",
-    description: "Our latest clinical study shows significant improvement in biofilm disruption compared to traditional mouthwashes.",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 3,
-    title: "Partnership Announcement",
-    description: "MolarCare partners with leading dental clinics across Malaysia to bring RinseGard to more patients.",
-    image: "/placeholder.svg",
-  },
-];
+import { announcements } from "@/data/announcements";
 
 const AnnouncementsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -61,8 +41,12 @@ const AnnouncementsSection = () => {
               </div>
               
               {/* Image */}
-              <div className="bg-muted aspect-video md:aspect-auto flex items-center justify-center min-h-[250px]">
-                <span className="text-muted-foreground text-lg font-medium">IMAGE</span>
+              <div className="bg-muted aspect-video md:aspect-auto flex items-center justify-center min-h-[250px] overflow-hidden">
+                <img 
+                  src={announcements[currentSlide].image} 
+                  alt={announcements[currentSlide].title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
