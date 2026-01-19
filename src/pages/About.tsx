@@ -43,7 +43,7 @@ const About = () => {
             <RevealSection delay={400}>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Our patented combination of excipients creates the Biofilm Dissolving Factor (BFD Factor™)<sup>1</sup>, 
-                a unique delivery system that actively overcomes biofilm resistance.
+                a unique delivery system that actively overcomes biofilm resistance.<sup>2</sup>
               </p>
             </RevealSection>
           </div>
