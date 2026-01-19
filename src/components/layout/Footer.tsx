@@ -76,7 +76,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {["Home", "Products", "About MolarCare", "FAQ"].map(link => <li key={link}>
+              {["Home", "Products", "About MolarCare", "FAQ", "Evidence & Insights"].map(link => <li key={link}>
                   <Link to="/" className="text-muted-foreground text-sm hover:text-foreground transition-colors">
                     {link}
                   </Link>
