@@ -83,7 +83,7 @@ const Products = () => {
               </Link>
 
               {/* Articles Link */}
-              <Link to="/about" className="bg-white border-2 border-border rounded-xl p-6 hover:border-accent transition-colors group">
+              <Link to="/evidence" className="bg-white border-2 border-border rounded-xl p-6 hover:border-accent transition-colors group">
                 <div className="text-center">
                   <p className="font-bold text-primary text-lg mb-4">Evidence & Insights</p>
                   <p className="text-accent font-semibold flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
