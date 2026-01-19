@@ -76,9 +76,15 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {["Home", "Products", "About MolarCare", "FAQ", "Evidence & Insights"].map(link => <li key={link}>
-                  <Link to="/" className="text-muted-foreground text-sm hover:text-foreground transition-colors">
-                    {link}
+              {[
+                { label: "Home", path: "/" },
+                { label: "Products", path: "/products" },
+                { label: "About MolarCare", path: "/about" },
+                { label: "FAQ", path: "/" },
+                { label: "Evidence & Insights", path: "/evidence" }
+              ].map(link => <li key={link.label}>
+                  <Link to={link.path} className="text-muted-foreground text-sm hover:text-foreground transition-colors">
+                    {link.label}
                   </Link>
                 </li>)}
             </ul>
