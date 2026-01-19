@@ -116,7 +116,7 @@ const ProductShowcase = () => {
                     <circle cx="38" cy="20" r="1.5" fill="currentColor" opacity="0.7" />
                   </svg>
                   {/* Number 1 */}
-                  <span className="absolute inset-0 flex items-center justify-center text-2xl font-black text-[#1F3A5F]">
+                  <span className="absolute inset-0 flex items-center justify-center text-3xl font-black text-[#1F3A5F]">
                     1
                   </span>
                 </div>
