@@ -79,7 +79,7 @@ const ProductShowcase = () => {
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 pt-4">
               {/* BFD Factor Logo */}
               <div className="flex-shrink-0">
-                <img src={bfdLogo} alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="h-20 md:h-24 w-auto" />
+                <img src={bfdLogo} alt="BFD Factor - Biofilms Dissolving Factor (Patented)" className="h-32 md:h-40 w-auto" />
               </div>
 
               {/* Ingredients Formula */}
