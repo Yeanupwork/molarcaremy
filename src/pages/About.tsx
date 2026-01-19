@@ -187,7 +187,7 @@ const About = () => {
           <div className="container-custom mx-auto">
             <RevealSection>
               <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-8">
-                The Science Behind Biofilm Dissolving Factor (BFD Factor™)
+                The Science Behind Biofilm Dissolving Factor (BFD Factor™)<sup>1,5</sup>
               </h2>
             </RevealSection>
             <RevealSection delay={200}>
