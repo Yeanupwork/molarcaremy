@@ -34,7 +34,7 @@ const Header = () => {
       dropdown: [{ label: "RinseGard", path: "/products/rinsegard" }],
     },
     {
-      label: "About Us",
+      label: "PATENTED TECHNOLOGY",
       path: "/about",
       dropdown: [{ label: "Patent", path: "/about/patent" }],
     },
