@@ -63,7 +63,7 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   <span className="text-[#d4a017] font-semibold">Poloxamer 407</span> acts as a penetration enhancer, 
                   creating channels within the biofilm's polymeric matrix. This allows Chlorhexidine to reach 
-                  bacteria previously shielded from treatment.
+                  bacteria previously shielded from treatment.<sup>3,4</sup>
                 </p>
               </RevealSection>
               <RevealSection delay={200} className="flex-1">
