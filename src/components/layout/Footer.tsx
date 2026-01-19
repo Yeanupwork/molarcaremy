@@ -22,6 +22,7 @@ const references = [
   "Chole RA, Faddis BT. Anatomical Evidence of Microbial Biofilms in Tonsillar Tissues: A Possible Mechanism to Explain Chronicity. Archives of Otolaryngology–Head & Neck Surgery. 2003;129(6):634-636",
   "Longo E, Giuliano E, Gagliardi A, et al. In Situ Forming Poloxamer-Based Thermo-Sensitive Hydrogels for Ocular Application: A Focus on the Derivatives 407 and 188. Gels. 2025;11(9):752.",
   "Xu, Z.; Liu, S.; Kang, Y.; Wang, M. Glutathione-Responsive Polymeric Micelles Formed by a Biodegradable Amphiphilic Triblock Copolymer for Anticancer Drug Delivery and Controlled Release. ACS Biomater. Sci. Eng. 2015, 1, 585-592",
+  "Keet, C. W., Lien, F. S., & Kai, T. Z. (2025, May). Anatomical Evidence of Biofilm Disruption in Tonsillar Crypts: A Novel Dual Antibacterial–Antiviral Gargle Solution. Theragon Healthcare Sdn Bhd",
 ];
 
 import molarcareLogo from "@/assets/molarcare-logo.png";
