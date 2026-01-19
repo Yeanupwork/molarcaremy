@@ -37,7 +37,7 @@ const About = () => {
             </RevealSection>
             <RevealSection delay={200}>
               <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6 leading-tight">
-                How Patented BFD Factor<br />Unlocks the Biofilm
+                How Patented BFD Factor<br />Unlocks the Biofilm<sup>1,5</sup>
               </h1>
             </RevealSection>
             <RevealSection delay={400}>
