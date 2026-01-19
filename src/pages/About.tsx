@@ -94,7 +94,7 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   <span className="text-[#d4a017] font-semibold">Polysorbate 20</span> prevents excessive gelation, 
                   ensuring the solution remains in a liquid form to flow deep into tonsillar crypts while maintaining 
-                  mucoadhesive properties for prolonged contact time.
+                  mucoadhesive properties for prolonged contact time.<sup>3,4</sup>
                 </p>
               </RevealSection>
               <RevealSection delay={200} className="flex-1">
