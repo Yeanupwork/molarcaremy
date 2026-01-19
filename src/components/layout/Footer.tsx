@@ -124,7 +124,7 @@ const Footer = () => {
                 </span>
               </div>
               <a 
-                href="https://wa.me/60102472600" 
+                href="https://wa.me/60102472600?text=Speak%20to%20our%20Product%20Specialist" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors"
