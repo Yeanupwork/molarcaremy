@@ -213,7 +213,7 @@ const About = () => {
                 Speak to a Product Specialist
               </a>
               <p className="text-primary-foreground/60 text-sm mt-4">
-                Available via WhatsApp • Response within 24 hours
+                Available via WhatsApp 
               </p>
             </div>
           </div>
