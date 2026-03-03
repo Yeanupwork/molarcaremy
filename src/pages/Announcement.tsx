@@ -16,7 +16,7 @@ const events = [
   time: "27.02.26 | 11AM",
   status: "upcoming" as const,
   title: "Webinar (Only for Healthcare Professional)",
-  description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts."
+  description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.\n\nWatch the webinar replay at the following link:\nhttps://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC"
 },
 {
   id: 3,
@@ -67,7 +67,7 @@ const Announcement = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
                     {announcements[currentSlide].title}
                   </h2>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-muted-foreground mb-6 whitespace-pre-line">
                     {announcements[currentSlide].description}
                   </p>
                   <button
@@ -151,7 +151,7 @@ const Announcement = () => {
                     <h3 className="text-xl md:text-2xl font-bold text-navy mt-1 mb-2">
                       {event.title}
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground whitespace-pre-line">
                       {event.description}
                     </p>
                   </div>

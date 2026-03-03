@@ -29,7 +29,7 @@ export const announcements: Announcement[] = [
   {
     id: 3,
     title: "Webinar (Only for Healthcare Professional)",
-    description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.",
+    description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.\n\nWatch the webinar replay at the following link:\nhttps://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC",
     image: webinarFlyerImg,
     detailImage: webinarFlyerImg,
   },
