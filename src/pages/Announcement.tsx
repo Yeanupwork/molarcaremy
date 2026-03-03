@@ -68,7 +68,11 @@ const Announcement = () => {
                     {announcements[currentSlide].title}
                   </h2>
                   <p className="text-muted-foreground mb-6 whitespace-pre-line">
-                    {announcements[currentSlide].description}
+                    {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                      part.match(/^https?:\/\//) ? (
+                        <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
+                      ) : part
+                    )}
                   </p>
                   <button
                     onClick={() => setSelectedImage(announcements[currentSlide].detailImage)}
