@@ -156,7 +156,11 @@ const Announcement = () => {
                       {event.title}
                     </h3>
                     <p className="text-muted-foreground whitespace-pre-line">
-                      {event.description}
+                      {event.description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                        part.match(/^https?:\/\//) ? (
+                          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
+                        ) : part
+                      )}
                     </p>
                   </div>
                 </div>
