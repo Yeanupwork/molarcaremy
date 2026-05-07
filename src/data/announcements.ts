@@ -14,6 +14,13 @@ export interface Announcement {
 
 export const announcements: Announcement[] = [
   {
+    id: 4,
+    title: "BFD Factor Recognized by MIMS",
+    description: "We are honored to announce that our BFD Factor has been officially recognized for listing in the Monthly Index of Medical Specialties (MIMS).",
+    image: mimsAnnouncementImg,
+    detailImage: mimsAnnouncementImg,
+  },
+  {
     id: 1,
     title: "RinseGard Product Launch",
     description: "We're excited to announce the official launch of RinseGard, our revolutionary oral rinse with BFD Factor technology.",
