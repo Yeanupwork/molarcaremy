@@ -81,7 +81,7 @@ const HeroSection = () => {
                 {slides[currentSlide].description}
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button
                 className="btn-primary group"
                 onClick={() => document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' })}
