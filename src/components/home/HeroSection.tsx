@@ -152,7 +152,7 @@ const HeroSection = () => {
         <img
           src={carouselBanner}
           alt="Biofilm Dissolving Technology - How antibiotics and BFD work together"
-          className="w-full h-auto"
+          className="w-full h-auto max-h-[180px] md:max-h-none object-cover"
         />
       </div>
     </>
