@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-6">
+        <div className="border-t border-border pt-4 md:pt-6">
           <p className="text-center text-muted-foreground text-sm">
             Copyright (c) MolarCare. All Right Reserved.
           </p>
