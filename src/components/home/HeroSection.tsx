@@ -99,7 +99,7 @@ const HeroSection = () => {
             </div>
 
             {/* Dots */}
-            <div className="flex items-center gap-2 mt-8">
+            <div className="flex items-center gap-2 mt-6 md:mt-8">
               {slides.map((_, index) => (
                 <button
                   key={index}
