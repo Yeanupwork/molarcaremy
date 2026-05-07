@@ -9,6 +9,7 @@ const slides = [
   {
     badge: "1st Patented in Malaysia",
     image: heroProductSlide1,
+    showShield: true,
     title: (
       <>
         Bridge the Immunity Gap:{" "}
@@ -27,6 +28,7 @@ const slides = [
     badge: "Evidence-Based Approach",
     badgeClass: "bg-pink-400 text-white",
     image: heroProductSlide2,
+    showShield: false,
     title: (
       <>
         Adjunctive Co-Prescription in URTI:{" "}
@@ -127,11 +129,13 @@ const HeroSection = () => {
             </button>
 
             <div className="relative w-full max-w-lg">
-              <img
-                src={shieldOverlay}
-                alt="Protection shield"
-                className="absolute inset-0 w-full h-full object-contain scale-125 opacity-60 z-0"
-              />
+              {slides[currentSlide].showShield && (
+                <img
+                  src={shieldOverlay}
+                  alt="Protection shield"
+                  className="absolute inset-0 w-full h-full object-contain scale-125 opacity-60 z-0"
+                />
+              )}
               <img
                 src={slides[currentSlide].image}
                 alt="RinseGard Antiseptic Oral Rinse"
