@@ -130,7 +130,7 @@ const HeroSection = () => {
               <ChevronRight className="w-5 h-5 text-white" />
             </button>
 
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-[260px] md:max-w-lg mx-auto">
               {slides[currentSlide].showShield && (
                 <img
                   src={shieldOverlay}
