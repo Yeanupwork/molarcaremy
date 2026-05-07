@@ -91,7 +91,7 @@ const HeroSection = () => {
               </Button>
               <Button
                 variant="outline"
-                className="border-2 border-white bg-transparent text-white font-semibold hover:bg-white hover:text-navy"
+                className="border-2 border-white bg-transparent text-white font-semibold hover:bg-white hover:text-navy text-sm md:text-base"
                 onClick={() => window.open('https://wa.me/60102472600?text=Get%20the%20Clinical%20Data', '_blank')}
               >
                 Discover the Science Behind It
