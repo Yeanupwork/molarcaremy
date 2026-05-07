@@ -57,16 +57,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <footer className="bg-background py-12 border-t border-border">
+      <footer className="bg-background py-8 md:py-12 border-t border-border">
         <div className="container-custom mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Logo */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="mb-4 inline-block">
+          <div className="col-span-2 lg:col-span-1">
+            <Link to="/" className="mb-2 md:mb-4 inline-block">
               <img 
                 src={molarcareLogo} 
                 alt="MolarCare" 
-                className="h-40 w-auto"
+                className="h-20 md:h-40 w-auto"
               />
             </Link>
           </div>
