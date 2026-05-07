@@ -66,7 +66,7 @@ const HeroSection = () => {
       <div className="container-custom mx-auto px-4 md:px-12 lg:px-16 relative z-10">
         <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-20 items-center">
           {/* Text Content */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div
               key={currentSlide}
               className="animate-fade-in"
