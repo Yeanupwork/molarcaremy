@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroProductSlide1 from "@/assets/hero-product.png";
 import heroProductSlide2 from "@/assets/hero-product-v3.png";
 import shieldOverlay from "@/assets/shield-overlay.png";
+import carouselBanner from "@/assets/carousel-banner.jpg";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
@@ -146,6 +147,13 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+      <div className="w-full bg-white">
+        <img
+          src={carouselBanner}
+          alt="Biofilm Dissolving Technology - How antibiotics and BFD work together"
+          className="w-full h-auto"
+        />
+      </div>
   );
 };
 
