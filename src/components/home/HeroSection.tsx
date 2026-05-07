@@ -77,7 +77,7 @@ const HeroSection = () => {
               <h1 className="text-primary-foreground mb-4 md:mb-6 leading-tight text-xl md:text-2xl lg:text-4xl">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 leading-relaxed">
+              <p className="text-primary-foreground/80 text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
             </div>
