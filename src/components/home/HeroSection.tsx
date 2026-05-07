@@ -74,7 +74,7 @@ const HeroSection = () => {
               <span className={`badge mb-4 md:mb-6 inline-flex text-xs md:text-sm ${slides[currentSlide].badgeClass || 'badge-yellow'}`}>
                 {slides[currentSlide].badge}
               </span>
-              <h1 className="text-primary-foreground mb-6 leading-tight text-2xl md:text-3xl lg:text-4xl">
+              <h1 className="text-primary-foreground mb-4 md:mb-6 leading-tight text-xl md:text-2xl lg:text-4xl">
                 {slides[currentSlide].title}
               </h1>
               <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 leading-relaxed">
