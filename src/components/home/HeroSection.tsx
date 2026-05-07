@@ -55,6 +55,7 @@ const HeroSection = () => {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
+    <>
     <section className="bg-navy min-h-[90vh] flex items-center relative overflow-hidden pt-24 pb-20 md:pt-28 md:pb-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -154,6 +155,7 @@ const HeroSection = () => {
           className="w-full h-auto"
         />
       </div>
+    </>
   );
 };
 
