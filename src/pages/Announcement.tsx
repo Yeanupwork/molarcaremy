@@ -68,14 +68,14 @@ const Announcement = () => {
           
           {/* Carousel */}
           <div className="relative">
-            <div className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
+          <div className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0 items-stretch">
                 {/* Content */}
-                <div className="p-8 md:p-12 flex flex-col justify-center">
-                  <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+                <div className="p-6 md:p-10 flex flex-col justify-center">
+                  <h2 className="text-2xl md:text-3xl font-bold text-navy mb-3">
                     {announcements[currentSlide].title}
                   </h2>
-                  <p className="text-muted-foreground mb-6 whitespace-pre-line">
+                  <p className="text-muted-foreground mb-5 whitespace-pre-line text-sm md:text-base leading-relaxed">
                     {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
                       part.match(/^https?:\/\//) ? (
                         <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
@@ -85,18 +85,16 @@ const Announcement = () => {
                   <button
                     onClick={() => setSelectedImage(announcements[currentSlide].detailImage)}
                     className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                    
                     Read More <ChevronRight className="w-4 h-4" />
                   </button>
                 </div>
                 
                 {/* Image */}
-                <div className="bg-muted aspect-[4/3] md:aspect-video flex items-center justify-center overflow-hidden">
+                <div className="bg-muted flex items-center justify-center overflow-hidden p-4 md:p-6">
                   <img
                     src={announcements[currentSlide].image}
                     alt={announcements[currentSlide].title}
-                    className="w-full h-full object-contain" />
-                  
+                    className="w-full h-full max-h-[300px] object-contain" />
                 </div>
               </div>
             </div>
@@ -141,29 +139,27 @@ const Announcement = () => {
             <div
               key={event.id}
               className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
-              
-                <div className="flex flex-col sm:flex-row">
+                <div className="flex flex-col sm:flex-row items-stretch">
                   {/* Date Box */}
-                  <div className={`flex-shrink-0 px-6 py-4 sm:px-8 sm:py-6 flex flex-col items-center justify-center ${
+                  <div className={`flex-shrink-0 w-full sm:w-[160px] px-6 py-4 sm:py-6 flex items-center justify-center ${
                 event.status === "upcoming" ?
                 "bg-gradient-to-br from-lime-400 to-lime-500" :
                 "bg-gradient-to-br from-lime-500 to-lime-600"}`
                 }>
-                    <span className="text-xl md:text-2xl font-bold text-white">{event.date}</span>
-                    
+                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">{event.date.trim()}</span>
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 p-6 sm:p-8">
-                    <span className={`text-sm font-semibold uppercase tracking-wide ${
+                  <div className="flex-1 p-5 sm:p-6">
+                    <span className={`text-xs font-semibold uppercase tracking-wider ${
                   event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"}`
                   }>
                       {event.status === "upcoming" ? "Announcement" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-bold text-navy mt-1 mb-2">
+                    <h3 className="text-lg md:text-xl font-bold text-navy mt-1 mb-2">
                       {event.title}
                     </h3>
-                    <p className="text-muted-foreground whitespace-pre-line">
+                    <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                       {event.description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
                         part.match(/^https?:\/\//) ? (
                           <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
