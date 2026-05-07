@@ -16,53 +16,53 @@ const AnnouncementsSection = () => {
 
   return (
     <section className="section-padding bg-background">
-      <div className="container-custom mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy mb-2">Announcements</h2>
-        <p className="text-muted-foreground mb-8">Here's what we've been working on</p>
+      <div className="container-custom mx-auto px-4 md:px-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-navy mb-1 md:mb-2">Announcements</h2>
+        <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8">Here's what we've been working on</p>
         
         {/* Carousel */}
         <div className="relative">
-          <div className="bg-card rounded-2xl shadow-lg overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
-              {/* Content */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-navy mb-4">
-                  {announcements[currentSlide].title}
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  {announcements[currentSlide].description}
-                </p>
-                <Link 
-                  to="/stories/announcement" 
-                  className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all w-fit"
-                >
-                  Read More <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-              
-              {/* Image */}
-              <div className="bg-muted aspect-video md:aspect-auto flex items-center justify-center min-h-[250px] overflow-hidden">
+          <div className="bg-card rounded-xl md:rounded-2xl shadow-lg overflow-hidden">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-0">
+              {/* Image — shown first on mobile */}
+              <div className="bg-muted aspect-[16/9] md:aspect-auto flex items-center justify-center md:min-h-[250px] overflow-hidden order-1 md:order-2">
                 <img 
                   src={announcements[currentSlide].image} 
                   alt={announcements[currentSlide].title}
                   className="w-full h-full object-cover"
                 />
               </div>
+
+              {/* Content */}
+              <div className="p-5 md:p-12 flex flex-col justify-center order-2 md:order-1">
+                <h3 className="text-lg md:text-3xl font-bold text-navy mb-2 md:mb-4 leading-snug">
+                  {announcements[currentSlide].title}
+                </h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed">
+                  {announcements[currentSlide].description}
+                </p>
+                <Link 
+                  to="/stories/announcement" 
+                  className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all w-fit text-sm md:text-base"
+                >
+                  Read More <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
           
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows — visible on mobile too */}
           <button 
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background shadow-lg rounded-full p-2 transition-colors hidden md:block"
+            className="absolute left-2 md:left-4 top-[25%] md:top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background shadow-lg rounded-full p-1.5 md:p-2 transition-colors"
           >
-            <ChevronLeft className="w-5 h-5 text-navy" />
+            <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-navy" />
           </button>
           <button 
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background shadow-lg rounded-full p-2 transition-colors hidden md:block"
+            className="absolute right-2 md:right-4 top-[25%] md:top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background shadow-lg rounded-full p-1.5 md:p-2 transition-colors"
           >
-            <ChevronRight className="w-5 h-5 text-navy" />
+            <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-navy" />
           </button>
         </div>
         
