@@ -56,7 +56,7 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="bg-navy min-h-0 md:min-h-[90vh] flex items-center relative overflow-hidden pt-20 pb-12 md:pt-28 md:pb-24">
+    <section className="bg-navy min-h-0 md:min-h-[75vh] flex items-center relative overflow-hidden pt-20 pb-12 md:pt-24 md:pb-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-16 right-8 w-32 h-32 md:top-32 md:right-20 md:w-64 md:h-64 rounded-full bg-accent blur-3xl" />

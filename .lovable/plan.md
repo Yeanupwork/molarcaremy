@@ -1,33 +1,20 @@
 
-## Mobile-Friendly Hero Section Improvements
+## Scale Down Hero Section at Desktop
 
-At 768px viewport, the current hero section has issues: `min-h-[90vh]` makes it excessively tall, the grid doesn't stack well, text and image sizing feel oversized, and the carousel banner below has no responsive constraints.
+The hero currently uses `md:min-h-[90vh]` and wide padding, making it feel too tall and broad on desktop. Here are the changes to make it more compact and proportional:
 
-### Proposed Changes (all in `HeroSection.tsx`)
+### Changes (all in `src/components/home/HeroSection.tsx`)
 
-**1. Reduce section height on mobile**
-- Change `min-h-[90vh]` to `min-h-[auto] md:min-h-[90vh]` so it sizes naturally on smaller screens instead of forcing 90% viewport height.
-- Reduce vertical padding: `pt-20 pb-12 md:pt-28 md:pb-24`.
+**1. Reduce minimum height**
+- Change `md:min-h-[90vh]` to `md:min-h-[75vh]` — still impactful but less overwhelming.
 
-**2. Improve grid stacking**
-- Reverse the visual order on mobile so the product image appears above the text (more engaging first impression), then text + CTA below.
-- Reduce gap: `gap-8 lg:gap-20`.
+**2. Tighten vertical padding**
+- Reduce desktop padding from `md:pt-28 md:pb-24` to `md:pt-24 md:pb-20`.
 
-**3. Scale down text for tablet/mobile**
-- H1: `text-xl md:text-2xl lg:text-4xl` (currently `text-2xl` at mobile which is large).
-- Description: `text-base md:text-lg lg:text-xl` (currently `text-lg` at all sizes).
-- Badge: smaller padding/text on mobile.
+**3. Constrain content width**
+- Add `max-w-7xl` to the container div so the content doesn't stretch edge-to-edge on wide screens.
 
-**4. Constrain product image on mobile**
-- Limit max width: `max-w-[280px] md:max-w-lg mx-auto` so the image doesn't dominate the screen.
+**4. Reduce grid gap**
+- Change `lg:gap-20` to `lg:gap-14` so text and image sit closer together.
 
-**5. Buttons — tighter on mobile**
-- Reduce button text size and padding on smaller screens.
-- Keep full-width stacking (`flex-col`) on mobile.
-
-**6. Carousel banner image**
-- Add max-height constraint on mobile: `max-h-[200px] md:max-h-none object-cover` to prevent the wide banner from being too short/unreadable or too dominant.
-
-### Technical Details
-
-All changes are CSS/Tailwind class adjustments within `src/components/home/HeroSection.tsx`. No structural or logic changes needed.
+These are all small Tailwind class tweaks — no structural changes.
