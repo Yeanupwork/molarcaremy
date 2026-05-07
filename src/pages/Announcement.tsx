@@ -158,7 +158,7 @@ const Announcement = () => {
                     <span className={`text-sm font-semibold uppercase tracking-wide ${
                   event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"}`
                   }>
-                      {event.status === "upcoming" ? "Webinar" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
+                      {event.status === "upcoming" ? "Announcement" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
                     </span>
                     <h3 className="text-xl md:text-2xl font-bold text-navy mt-1 mb-2">
                       {event.title}
