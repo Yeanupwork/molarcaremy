@@ -64,7 +64,7 @@ const HeroSection = () => {
               key={currentSlide}
               className="animate-fade-in"
             >
-              <span className="badge badge-yellow mb-6 inline-flex">
+              <span className={`badge mb-6 inline-flex ${slides[currentSlide].badgeClass || 'badge-yellow'}`}>
                 {slides[currentSlide].badge}
               </span>
               <h1 className="text-primary-foreground mb-6 leading-tight text-2xl md:text-3xl lg:text-4xl">
