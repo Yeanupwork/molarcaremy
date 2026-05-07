@@ -2,6 +2,7 @@ import rinsegardLaunchImg from "@/assets/rinsegard-launch.png";
 import independentClinicImg from "@/assets/independent-clinic.jpg";
 import webinarFlyerImg from "@/assets/webinar-flyer.png";
 import rinsegardFlyerImg from "@/assets/rinsegard-flyer.png";
+import mimsAnnouncementImg from "@/assets/mims-announcement.jpg";
 
 export interface Announcement {
   id: number;
