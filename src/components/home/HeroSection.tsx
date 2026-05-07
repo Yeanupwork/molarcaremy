@@ -23,6 +23,7 @@ const slides = [
   },
   {
     badge: "Evidence-Based Approach",
+    badgeClass: "bg-pink-400 text-white",
     title: (
       <>
         Adjunctive Co-Prescription in URTI:{" "}
