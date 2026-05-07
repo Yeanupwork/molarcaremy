@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import heroProductSlide1 from "@/assets/hero-product.png";
-import heroProductSlide2 from "@/assets/hero-product.jpg";
+import heroProductSlide2 from "@/assets/hero-product-slide2.png";
 import shieldOverlay from "@/assets/shield-overlay.png";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
