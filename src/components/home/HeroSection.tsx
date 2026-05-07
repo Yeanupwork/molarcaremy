@@ -56,34 +56,34 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="bg-navy min-h-[90vh] flex items-center relative overflow-hidden pt-24 pb-20 md:pt-28 md:pb-24">
+    <section className="bg-navy min-h-0 md:min-h-[90vh] flex items-center relative overflow-hidden pt-20 pb-12 md:pt-28 md:pb-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-32 right-20 w-64 h-64 rounded-full bg-accent blur-3xl" />
         <div className="absolute bottom-32 left-20 w-48 h-48 rounded-full bg-accent-green blur-3xl" />
       </div>
 
-      <div className="container-custom mx-auto px-6 md:px-12 lg:px-16 relative z-10">
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
+      <div className="container-custom mx-auto px-4 md:px-12 lg:px-16 relative z-10">
+        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-20 items-center">
           {/* Text Content */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div
               key={currentSlide}
               className="animate-fade-in"
             >
-              <span className={`badge mb-6 inline-flex ${slides[currentSlide].badgeClass || 'badge-yellow'}`}>
+              <span className={`badge mb-4 md:mb-6 inline-flex text-xs md:text-sm ${slides[currentSlide].badgeClass || 'badge-yellow'}`}>
                 {slides[currentSlide].badge}
               </span>
-              <h1 className="text-primary-foreground mb-6 leading-tight text-2xl md:text-3xl lg:text-4xl">
+              <h1 className="text-primary-foreground mb-4 md:mb-6 leading-tight text-xl md:text-2xl lg:text-4xl">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 leading-relaxed">
+              <p className="text-primary-foreground/80 text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button
-                className="btn-primary group"
+                className="btn-primary group text-sm md:text-base"
                 onClick={() => document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Where to Find
@@ -91,7 +91,7 @@ const HeroSection = () => {
               </Button>
               <Button
                 variant="outline"
-                className="border-2 border-white bg-transparent text-white font-semibold hover:bg-white hover:text-navy"
+                className="border-2 border-white bg-transparent text-white font-semibold hover:bg-white hover:text-navy text-sm md:text-base"
                 onClick={() => window.open('https://wa.me/60102472600?text=Get%20the%20Clinical%20Data', '_blank')}
               >
                 Discover the Science Behind It
@@ -99,7 +99,7 @@ const HeroSection = () => {
             </div>
 
             {/* Dots */}
-            <div className="flex items-center gap-2 mt-8">
+            <div className="flex items-center gap-2 mt-6 md:mt-8">
               {slides.map((_, index) => (
                 <button
                   key={index}
@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
 
           {/* Product Image with Shield Overlay */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center order-1 lg:order-2">
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
@@ -130,7 +130,7 @@ const HeroSection = () => {
               <ChevronRight className="w-5 h-5 text-white" />
             </button>
 
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-[260px] md:max-w-lg mx-auto">
               {slides[currentSlide].showShield && (
                 <img
                   src={shieldOverlay}
@@ -152,7 +152,7 @@ const HeroSection = () => {
         <img
           src={carouselBanner}
           alt="Biofilm Dissolving Technology - How antibiotics and BFD work together"
-          className="w-full h-auto"
+          className="w-full h-auto max-h-[180px] md:max-h-none object-cover"
         />
       </div>
     </>
