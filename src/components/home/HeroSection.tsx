@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
 
           {/* Product Image with Shield Overlay */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center order-1 lg:order-2">
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
