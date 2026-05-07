@@ -76,9 +76,9 @@ const Announcement = () => {
                     {announcements[currentSlide].title}
                   </h2>
                   <p className="text-muted-foreground mb-5 whitespace-pre-line text-sm md:text-base leading-relaxed">
-                    {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-                      part.match(/^https?:\/\//) ? (
-                        <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
+                    {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+|Webinar Replay \(for HCP only\))/g).map((part, i) =>
+                      part.match(/^https?:\/\//) || part === "Webinar Replay (for HCP only)" ? (
+                        <a key={i} href={part === "Webinar Replay (for HCP only)" ? "https://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC" : part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
                       ) : part
                     )}
                   </p>
