@@ -91,11 +91,11 @@ const Announcement = () => {
                 </div>
                 
                 {/* Image */}
-                <div className="bg-muted aspect-video md:aspect-auto flex items-center justify-center min-h-[250px] overflow-hidden">
+                <div className="bg-muted aspect-[4/3] md:aspect-video flex items-center justify-center overflow-hidden">
                   <img
                     src={announcements[currentSlide].image}
                     alt={announcements[currentSlide].title}
-                    className="w-full h-full object-fill" />
+                    className="w-full h-full object-contain" />
                   
                 </div>
               </div>
