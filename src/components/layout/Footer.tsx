@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-foreground font-medium mb-3 text-sm">
               Contact
             </h4>
