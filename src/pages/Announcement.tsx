@@ -24,7 +24,7 @@ const events = [
   time: "27.02.26 | 11AM",
   status: "upcoming" as const,
   title: "Webinar (Only for Healthcare Professional)",
-  description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.\n\nWatch the webinar replay at the following link:\nhttps://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC"
+  description: "We are pleased to invite healthcare professionals to an exclusive webinar featuring Dr. Chng Wee Keat, Founder and CEO of Theragon Healthcare. Dr. Chng will review new anatomical evidence regarding the limited penetration of conventional rinses and explore the pharmacological mechanisms required to disrupt sessile bacteria within deep tonsillar crypts.\n\nWatch the webinar replay at the following link:\nWebinar Replay (for HCP only)"
 },
 {
   id: 3,
@@ -76,9 +76,9 @@ const Announcement = () => {
                     {announcements[currentSlide].title}
                   </h2>
                   <p className="text-muted-foreground mb-5 whitespace-pre-line text-sm md:text-base leading-relaxed">
-                    {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-                      part.match(/^https?:\/\//) ? (
-                        <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
+                    {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+|Webinar Replay \(for HCP only\))/g).map((part, i) =>
+                      part.match(/^https?:\/\//) || part === "Webinar Replay (for HCP only)" ? (
+                        <a key={i} href={part === "Webinar Replay (for HCP only)" ? "https://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC" : part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
                       ) : part
                     )}
                   </p>
@@ -160,9 +160,9 @@ const Announcement = () => {
                       {event.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
-                      {event.description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-                        part.match(/^https?:\/\//) ? (
-                          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
+                      {event.description.split(/(https?:\/\/[^\s]+|Webinar Replay \(for HCP only\))/g).map((part, i) =>
+                        part.match(/^https?:\/\//) || part === "Webinar Replay (for HCP only)" ? (
+                          <a key={i} href={part === "Webinar Replay (for HCP only)" ? "https://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC" : part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
                         ) : part
                       )}
                     </p>
