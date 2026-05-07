@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroProduct from "@/assets/hero-product.jpg";
+import heroProductSlide1 from "@/assets/hero-product.png";
+import heroProductSlide2 from "@/assets/hero-product.jpg";
 import shieldOverlay from "@/assets/shield-overlay.png";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
     badge: "1st Patented in Malaysia",
+    image: heroProductSlide1,
     title: (
       <>
         Bridge the Immunity Gap:{" "}
@@ -24,6 +26,7 @@ const slides = [
   {
     badge: "Evidence-Based Approach",
     badgeClass: "bg-pink-400 text-white",
+    image: heroProductSlide2,
     title: (
       <>
         Adjunctive Co-Prescription in URTI:{" "}
@@ -130,7 +133,7 @@ const HeroSection = () => {
                 className="absolute inset-0 w-full h-full object-contain scale-125 opacity-60 z-0"
               />
               <img
-                src={heroProduct}
+                src={slides[currentSlide].image}
                 alt="RinseGard Antiseptic Oral Rinse"
                 className="relative z-10 w-full h-auto rounded-2xl"
               />
