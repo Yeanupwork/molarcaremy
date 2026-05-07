@@ -83,7 +83,7 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button
-                className="btn-primary group"
+                className="btn-primary group text-sm md:text-base"
                 onClick={() => document.getElementById('clinics')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Where to Find
