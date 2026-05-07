@@ -139,29 +139,27 @@ const Announcement = () => {
             <div
               key={event.id}
               className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
-              
-                <div className="flex flex-col sm:flex-row">
+                <div className="flex flex-col sm:flex-row items-stretch">
                   {/* Date Box */}
-                  <div className={`flex-shrink-0 px-6 py-4 sm:px-8 sm:py-6 flex flex-col items-center justify-center ${
+                  <div className={`flex-shrink-0 w-full sm:w-[160px] px-6 py-4 sm:py-6 flex items-center justify-center ${
                 event.status === "upcoming" ?
                 "bg-gradient-to-br from-lime-400 to-lime-500" :
                 "bg-gradient-to-br from-lime-500 to-lime-600"}`
                 }>
-                    <span className="text-xl md:text-2xl font-bold text-white">{event.date}</span>
-                    
+                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">{event.date.trim()}</span>
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 p-6 sm:p-8">
-                    <span className={`text-sm font-semibold uppercase tracking-wide ${
+                  <div className="flex-1 p-5 sm:p-6">
+                    <span className={`text-xs font-semibold uppercase tracking-wider ${
                   event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"}`
                   }>
                       {event.status === "upcoming" ? "Announcement" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-bold text-navy mt-1 mb-2">
+                    <h3 className="text-lg md:text-xl font-bold text-navy mt-1 mb-2">
                       {event.title}
                     </h3>
-                    <p className="text-muted-foreground whitespace-pre-line">
+                    <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                       {event.description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
                         part.match(/^https?:\/\//) ? (
                           <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
