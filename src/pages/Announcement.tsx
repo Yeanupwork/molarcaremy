@@ -11,6 +11,14 @@ import { announcements } from "@/data/announcements";
 
 const events = [
 {
+  id: 0,
+  date: "May 2026",
+  time: "                                                                          ",
+  status: "upcoming" as const,
+  title: "BFD Factor Recognized by MIMS",
+  description: "We are honored to announce that our BFD Factor has been officially recognized for listing in the Monthly Index of Medical Specialties (MIMS)."
+},
+{
   id: 1,
   date: "Feb 2026",
   time: "27.02.26 | 11AM",
