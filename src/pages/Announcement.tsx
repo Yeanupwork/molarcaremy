@@ -68,14 +68,14 @@ const Announcement = () => {
           
           {/* Carousel */}
           <div className="relative">
-            <div className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
+          <div className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0 items-stretch">
                 {/* Content */}
-                <div className="p-8 md:p-12 flex flex-col justify-center">
-                  <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+                <div className="p-6 md:p-10 flex flex-col justify-center">
+                  <h2 className="text-2xl md:text-3xl font-bold text-navy mb-3">
                     {announcements[currentSlide].title}
                   </h2>
-                  <p className="text-muted-foreground mb-6 whitespace-pre-line">
+                  <p className="text-muted-foreground mb-5 whitespace-pre-line text-sm md:text-base leading-relaxed">
                     {announcements[currentSlide].description.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
                       part.match(/^https?:\/\//) ? (
                         <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
@@ -85,18 +85,16 @@ const Announcement = () => {
                   <button
                     onClick={() => setSelectedImage(announcements[currentSlide].detailImage)}
                     className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                    
                     Read More <ChevronRight className="w-4 h-4" />
                   </button>
                 </div>
                 
                 {/* Image */}
-                <div className="bg-muted aspect-[4/3] md:aspect-video flex items-center justify-center overflow-hidden">
+                <div className="bg-muted flex items-center justify-center overflow-hidden p-4 md:p-6">
                   <img
                     src={announcements[currentSlide].image}
                     alt={announcements[currentSlide].title}
-                    className="w-full h-full object-contain" />
-                  
+                    className="w-full h-full max-h-[300px] object-contain" />
                 </div>
               </div>
             </div>
