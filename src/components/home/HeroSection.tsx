@@ -63,8 +63,8 @@ const HeroSection = () => {
         <div className="absolute bottom-16 left-8 w-24 h-24 md:bottom-32 md:left-20 md:w-48 md:h-48 rounded-full bg-accent-green blur-3xl" />
       </div>
 
-      <div className="container-custom mx-auto px-4 md:px-12 lg:px-16 relative z-10">
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-20 items-center">
+      <div className="container-custom mx-auto px-4 md:px-12 lg:px-16 max-w-7xl relative z-10">
+        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-14 items-center">
           {/* Text Content */}
           <div className="relative order-2 lg:order-1">
             <div
