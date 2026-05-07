@@ -150,7 +150,7 @@ const Announcement = () => {
                 "bg-gradient-to-br from-lime-500 to-lime-600"}`
                 }>
                     <span className="text-xl md:text-2xl font-bold text-white">{event.date}</span>
-                    <span className="text-lg md:text-xl font-semibold text-white">{event.time}</span>
+                    
                   </div>
                   
                   {/* Content */}
