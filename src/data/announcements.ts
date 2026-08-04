@@ -18,8 +18,8 @@ export const announcements: Announcement[] = [
     id: 5,
     title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in PMCare",
     description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community.",
-    image: pmcareAnnouncementAsset.url,
-    detailImage: pmcareAnnouncementAsset.url,
+    image: "https://rkchptwhpohrbzdfetbd.supabase.co/storage/v1/object/public/assets/PMCare-Announcement1.0.png",
+    detailImage: "https://rkchptwhpohrbzdfetbd.supabase.co/storage/v1/object/public/assets/PMCare-Announcement1.0.png",
   },
   {
     id: 4,
