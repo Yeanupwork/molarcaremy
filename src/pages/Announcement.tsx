@@ -11,6 +11,14 @@ import { announcements } from "@/data/announcements";
 
 const events = [
 {
+  id: 6,
+  date: "Aug 2026",
+  time: "                                                                          ",
+  status: "upcoming" as const,
+  title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in PMCare",
+  description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community."
+},
+{
   id: 0,
   date: "May 2026",
   time: "                                                                          ",
