@@ -32,7 +32,7 @@ const slides = [
     showShield: false,
     title: (
       <>
-        Antibiotic Enhancer for Co-Prescription in URTI:{" "}
+        <span className="text-yellow-400 font-bold">Antibiotic Enhancer</span> for Co-Prescription in URTI:{" "}
         <span className="text-pink-400">Reduce Antibiotic Resistance</span>&nbsp;
       </>
     ),
