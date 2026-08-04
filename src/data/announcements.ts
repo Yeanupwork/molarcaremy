@@ -3,6 +3,7 @@ import independentClinicImg from "@/assets/independent-clinic.jpg";
 import webinarFlyerImg from "@/assets/webinar-flyer.png";
 import rinsegardFlyerImg from "@/assets/rinsegard-flyer.png";
 import mimsAnnouncementImg from "@/assets/mims-announcement.jpg";
+import pmcareAnnouncementAsset from "@/assets/pmcare-announcement.png.asset.json";
 
 export interface Announcement {
   id: number;
@@ -13,6 +14,13 @@ export interface Announcement {
 }
 
 export const announcements: Announcement[] = [
+  {
+    id: 5,
+    title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in PMCare",
+    description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community.",
+    image: pmcareAnnouncementAsset.url,
+    detailImage: pmcareAnnouncementAsset.url,
+  },
   {
     id: 4,
     title: "BFD Factor Recognized by MIMS",
