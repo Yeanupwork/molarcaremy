@@ -3,7 +3,6 @@ import independentClinicImg from "@/assets/independent-clinic.jpg";
 import webinarFlyerImg from "@/assets/webinar-flyer.png";
 import rinsegardFlyerImg from "@/assets/rinsegard-flyer.png";
 import mimsAnnouncementImg from "@/assets/mims-announcement.jpg";
-import pmcareAnnouncementAsset from "@/assets/pmcare-announcement.png.asset.json";
 
 export interface Announcement {
   id: number;
