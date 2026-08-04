@@ -32,8 +32,8 @@ const slides = [
     showShield: false,
     title: (
       <>
-        Adjunctive Co-Prescription in URTI:{" "}
-        <span className="text-pink-400">Enhance Healing & Reduce Antibiotic Resistance</span>&nbsp;
+        Antibiotic Enhancer for Co-Prescription in URTI:{" "}
+        <span className="text-pink-400">Reduce Antibiotic Resistance</span>&nbsp;
       </>
     ),
     description:
