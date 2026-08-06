@@ -195,6 +195,10 @@
   .gradient-text {
     @apply bg-gradient-to-r from-accent to-accent-yellow-light bg-clip-text text-transparent;
   }
+
+  .font-boldonse {
+    font-family: 'Boldonse', sans-serif;
+  }
 }
 
 @layer utilities {
