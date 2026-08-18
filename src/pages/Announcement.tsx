@@ -15,8 +15,8 @@ const events = [
   date: "Aug 2026",
   time: "                                                                          ",
   status: "upcoming" as const,
-  title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in PMCare",
-  description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community."
+    title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in all claimable TPA panels",
+    description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare, MiCare, Healthconnect & RedAlert TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community."
 },
 {
   id: 0,
