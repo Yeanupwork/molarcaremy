@@ -15,6 +15,13 @@ export interface Announcement {
 
 export const announcements: Announcement[] = [
   {
+    id: 6,
+    title: "Another New Milestone",
+    description: "MolarCare RinseGard is now officially listed on MiCare, HealthConnect & RedAlert.\n\nAn Innovative solution from Malaysia. Available in participating Clinics nationwide.\n\nList of all claimable TPA Panels:\n\n1) PMCare\n2) MiCare\n3) Healthconnect\n4) RedAlert Online",
+    image: moreTpaPanelsImg.url,
+    detailImage: moreTpaPanelsImg.url,
+  },
+  {
     id: 5,
     title: "A New Milestone: MolarCare RinseGard Is Now Officially Listed in PMCare",
     description: "We are pleased to announce that MolarCare RinseGard is now officially listed in PMCare TPA Panel system, marking another important milestone in expanding its accessibility within the healthcare community.",
