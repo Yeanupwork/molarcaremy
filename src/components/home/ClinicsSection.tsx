@@ -44,6 +44,18 @@ const clinics = [
   {
     name: "ST Clinic Sdn Bhd",
     address: "23, Jalan Tun Sambanthan 4, Brickfields, 50470 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+  },
+  {
+    name: "Klinik Metrocare 24 Jam (Gemilang)",
+    address: "77, Jln Perniagaan Gemilang 1, Pusat Perniagaan Gemilang, 14000 Bukit Mertajam, Pulau Pinang"
+  },
+  {
+    name: "Klinik Metrocare 24 Jam",
+    address: "19, Jalan Bukit Minyak 7, Taman Bukit Minyak, 14000 Bukit Mertajam, Pulau Pinang"
+  },
+  {
+    name: "Klinik Metrocare 24 Jam Alma",
+    address: "2129, Jalan Rozhan, Taman Impian Ria, 14000 Bukit Mertajam, Pulau Pinang"
   }
 ];
 
