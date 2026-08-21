@@ -71,7 +71,7 @@ const ClinicsSection = () => {
             <span className="text-accent">Exclusively at GP Clinics.</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Available at licensed GP clinics across Malaysia, with claims accepted through major TPA panels including PMCare, MiCare, HealthConnect, and RedAlert Online.
+            Available at licensed GP clinics across Malaysia, with claims accepted through major TPA panels including <span className="text-[#00a651] font-semibold">PMCare, MiCare, HealthConnect, and RedAlert Online</span>.
           </p>
         </div>
 
