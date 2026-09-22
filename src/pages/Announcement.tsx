@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronRight, ChevronLeft, X } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -85,6 +85,22 @@ Healing in Infinite Ways.`
 const Announcement = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
+  const slidePhotos = announcements[currentSlide].images ?? [announcements[currentSlide].image];
+
+  useEffect(() => {
+    setPhotoIndex(0);
+  }, [currentSlide]);
+
+  useEffect(() => {
+    if (slidePhotos.length < 2) return;
+    const timer = setInterval(() => {
+      setPhotoIndex((prev) => (prev + 1) % slidePhotos.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [slidePhotos.length, currentSlide]);
+
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % announcements.length);
