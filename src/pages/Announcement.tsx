@@ -137,18 +137,37 @@ const Announcement = () => {
                     )}
                   </p>
                   <button
-                    onClick={() => setSelectedImage(announcements[currentSlide].detailImage)}
+                    onClick={() => setSelectedImage(slidePhotos[photoIndex] ?? announcements[currentSlide].detailImage)}
                     className="text-accent font-semibold flex items-center gap-1 hover:gap-2 transition-all">
                     Read More <ChevronRight className="w-4 h-4" />
                   </button>
                 </div>
                 
-                {/* Image */}
-                <div className="bg-muted flex items-center justify-center overflow-hidden p-4 md:p-6">
-                  <img
-                    src={announcements[currentSlide].image}
-                    alt={announcements[currentSlide].title}
-                    className="w-full h-full max-h-[300px] object-contain" />
+                {/* Image / photo slideshow */}
+                <div className="bg-muted flex flex-col items-center justify-center overflow-hidden p-4 md:p-6 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedImage(slidePhotos[photoIndex])}
+                    className="w-full flex-1 flex items-center justify-center">
+                    <img
+                      key={slidePhotos[photoIndex]}
+                      src={slidePhotos[photoIndex]}
+                      alt={announcements[currentSlide].title}
+                      className="w-full h-full max-h-[300px] object-contain animate-in fade-in duration-700" />
+                  </button>
+                  {slidePhotos.length > 1 &&
+                  <div className="flex items-center justify-center gap-2">
+                      {slidePhotos.map((_, i) =>
+                    <button
+                      key={i}
+                      onClick={() => setPhotoIndex(i)}
+                      aria-label={`Photo ${i + 1}`}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                      i === photoIndex ? "bg-navy" : "bg-navy/25 hover:bg-navy/50"}`} />
+
+                    )}
+                    </div>
+                  }
                 </div>
               </div>
             </div>
