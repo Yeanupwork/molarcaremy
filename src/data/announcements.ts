@@ -4,6 +4,7 @@ import webinarFlyerImg from "@/assets/webinar-flyer.png";
 import rinsegardFlyerImg from "@/assets/rinsegard-flyer.png";
 import mimsAnnouncementImg from "@/assets/mims-announcement.jpg";
 import moreTpaPanelsImg from "@/assets/more-tpas-announcement.jpg";
+import perdimVisitImg from "@/assets/clinical-study.jpg";
 
 export interface Announcement {
   id: number;
@@ -14,6 +15,13 @@ export interface Announcement {
 }
 
 export const announcements: Announcement[] = [
+  {
+    id: 7,
+    title: "Theragon x PERDIM: Manufacturing Site Visit & Endorsement Agreement",
+    description: "A meaningful milestone for Theragon and MolarCare RinseGard.\n\nWe were honoured to host the Executive Committee of PERDIM for a visit to the manufacturing site of MolarCare RinseGard, and the visit concluded with the signing of an Endorsement Agreement between Theragon Healthcare and PERDIM to promote MolarCare RinseGard — another important step in advancing Antibiotic Stewardship and addressing Antimicrobial Resistance (AMR).\n\nHealing in Infinite Ways.",
+    image: perdimVisitImg,
+    detailImage: perdimVisitImg,
+  },
   {
     id: 6,
     title: "Another New Milestone",

@@ -11,6 +11,36 @@ import { announcements } from "@/data/announcements";
 
 const events = [
 {
+  id: 7,
+  date: "Sept 2026",
+  time: "                                                                          ",
+  status: "upcoming" as const,
+  title: "Theragon x PERDIM: Manufacturing Site Visit & Endorsement Agreement",
+  description: `A meaningful milestone for Theragon and MolarCare RinseGard.
+
+We were honoured to host the Executive Committee of PERDIM for a visit to the manufacturing site of MolarCare RinseGard, providing a first-hand look at the manufacturing processes and standards behind the product.
+
+The visit concluded with the signing of an Endorsement Agreement between Theragon Healthcare and PERDIM to promote MolarCare RinseGard — another important step in advancing Antibiotic Stewardship and addressing Antimicrobial Resistance (AMR).
+
+Invented and researched in Malaysia, MolarCare RinseGard is a patented Malaysian innovation developed as an adjunctive approach to Upper Respiratory Tract Infection (URTI) treatment. As of latest knowledge, it is currently the only product in the world with this specific patented indication and application.
+
+At the centre of this innovation is the BFD Factor — Biofilm Dissolving Factor.
+
+Biofilms existed in all human body surfaces, it can provide microorganisms with a protective environment that may reduce their susceptibility to antimicrobial intervention. RinseGard is designed to address this often-overlooked factor and complement appropriate antibiotic therapy and clinical management.
+
+This connects to a much bigger challenge: Antibiotic Stewardship, it is not simply about using fewer antibiotics.
+
+It is about using antibiotics appropriately, only when indicated, while creating better conditions for treatment success and reducing unnecessary antimicrobial exposure.
+
+Addressing AMR therefore requires an ecosystem: appropriate prescribing, diagnostics, patient adherence, infection prevention, education and innovations addressing factors that may affect antimicrobial effectiveness.
+
+For Theragon, our collaboration with PERDIM goes beyond product endorsement. It is an opportunity to bring Antibiotic Stewardship, AMR and the Biofilm Dissolving Factor closer to everyday primary care — while bringing a homegrown Malaysian pharmaceutical innovation further forward.
+
+Our sincere appreciation to the PERDIM EXCO for their visit, engagement and support.
+
+Healing in Infinite Ways.`
+},
+{
   id: 6,
   date: "Aug 2026",
   time: "                                                                          ",
