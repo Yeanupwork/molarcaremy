@@ -86,6 +86,17 @@ const Announcement = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [expandedIds, setExpandedIds] = useState<number[]>([]);
+
+  const toggleExpanded = (id: number) =>
+  setExpandedIds((prev) => prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]);
+
+  const renderDescription = (text: string) =>
+  text.split(/(https?:\/\/[^\s]+|Webinar Replay \(for HCP only\))/g).map((part, i) =>
+  part.match(/^https?:\/\//) || part === "Webinar Replay (for HCP only)" ?
+  <a key={i} href={part === "Webinar Replay (for HCP only)" ? "https://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC" : part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a> :
+  part
+  );
 
   const slidePhotos = announcements[currentSlide].images ?? [announcements[currentSlide].image];
 
