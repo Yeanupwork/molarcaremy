@@ -218,42 +218,65 @@ const Announcement = () => {
         <section>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-8">Events</h2>
           
-          <div className="space-y-4">
-            {events.map((event) =>
-            <div
-              key={event.id}
-              className="bg-card rounded-2xl shadow-lg-custom overflow-hidden">
-                <div className="flex flex-col sm:flex-row items-stretch">
-                  {/* Date Box */}
-                  <div className={`flex-shrink-0 w-full sm:w-[160px] px-6 py-4 sm:py-6 flex items-center justify-center ${
-                event.status === "upcoming" ?
-                "bg-gradient-to-br from-lime-400 to-lime-500" :
-                "bg-gradient-to-br from-lime-500 to-lime-600"}`
-                }>
-                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">{event.date.trim()}</span>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="flex-1 p-5 sm:p-6">
-                    <span className={`text-xs font-semibold uppercase tracking-wider ${
-                  event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"}`
-                  }>
-                      {event.status === "upcoming" ? "Announcement" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
-                    </span>
-                    <h3 className="text-lg md:text-xl font-bold text-navy mt-1 mb-2">
-                      {event.title}
-                    </h3>
+          <div className="space-y-3">
+            {events.map((event) => {
+              const isOpen = expandedIds.includes(event.id);
+              const isLong = event.description.length > 160;
+              return (
+                <div
+                  key={event.id}
+                  className="bg-card rounded-2xl border border-border/60 shadow-sm hover:shadow-md hover:border-navy/20 transition-all overflow-hidden">
+                  <button
+                    type="button"
+                    onClick={() => isLong && toggleExpanded(event.id)}
+                    className={`w-full text-left flex flex-col sm:flex-row items-stretch ${isLong ? "cursor-pointer" : "cursor-default"}`}>
+                    {/* Date Box */}
+                    <div className={`flex-shrink-0 w-full sm:w-[150px] px-5 py-3 sm:py-6 flex items-center justify-center ${
+                    event.status === "upcoming" ?
+                    "bg-navy" :
+                    "bg-navy/5"}`
+                    }>
+                      <span className={`text-base md:text-lg font-bold whitespace-nowrap ${
+                      event.status === "upcoming" ? "text-white" : "text-navy"}`
+                      }>{event.date.trim()}</span>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 min-w-0 p-5 flex items-start gap-4">
+                      <div className="flex-1 min-w-0">
+                        <span className={`text-[11px] font-semibold uppercase tracking-wider ${
+                        event.status === "upcoming" ? "text-accent" : event.status === "ongoing" ? "text-blue-600" : "text-lime-600"}`
+                        }>
+                          {event.status === "upcoming" ? "Announcement" : event.status === "ongoing" ? "EVENT ONGOING" : "Event Ended"}
+                        </span>
+                        <h3 className="text-base md:text-lg font-bold text-navy mt-1">
+                          {event.title}
+                        </h3>
+                        {!isOpen &&
+                        <p className="text-muted-foreground text-sm leading-relaxed mt-1.5 line-clamp-2">
+                          {event.description}
+                        </p>
+                        }
+                      </div>
+                      {isLong &&
+                      <span className="flex-shrink-0 flex items-center gap-1 text-xs font-semibold text-navy/70 mt-1">
+                        <span className="hidden sm:inline">{isOpen ? "Show Less" : "Read More"}</span>
+                        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                      </span>
+                      }
+                    </div>
+                  </button>
+
+                  {isOpen &&
+                  <div className="px-5 pb-5 sm:pl-[170px]">
                     <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
-                      {event.description.split(/(https?:\/\/[^\s]+|Webinar Replay \(for HCP only\))/g).map((part, i) =>
-                        part.match(/^https?:\/\//) || part === "Webinar Replay (for HCP only)" ? (
-                          <a key={i} href={part === "Webinar Replay (for HCP only)" ? "https://www.youtube.com/live/mlhkMOgOEu0?si=bLdIqb6eoXPcD9CC" : part} target="_blank" rel="noopener noreferrer" className="text-accent underline break-all">{part}</a>
-                        ) : part
-                      )}
+                      {renderDescription(event.description)}
                     </p>
                   </div>
-                </div>
-              </div>
-            )}
+                  }
+                </div>);
+
+            })}
           </div>
         </section>
       </main>
